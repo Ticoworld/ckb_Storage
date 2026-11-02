@@ -1,0 +1,14 @@
+[package]
+name = "wo01-validator"
+version = "0.1.0"
+edition = "2024"
+[dependencies]
+ckb-types = { path = "../../../wo01-sources/ckb/util/types" }
+ckb-script = { path = "../../../wo01-sources/ckb/script" }
+ckb-verification = { path = "../../../wo01-sources/ckb/verification" }
+ckb-chain-spec = { path = "../../../wo01-sources/ckb/spec" }
+ckb-traits = { path = "../../../wo01-sources/ckb/traits" }
+ckb-hash = { path = "../../../wo01-sources/ckb/util/hash" }
+ed25519-dalek = "=2.2.0"
+serde_json = "=1.0.145"
+hex = "=0.4.3"

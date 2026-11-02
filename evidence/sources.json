@@ -1,0 +1,54 @@
+{
+  "retrieved_utc": "2026-11-02",
+  "sources": [
+    {
+      "name": "ckb",
+      "url": "https://github.com/nervosnetwork/ckb.git",
+      "commit": "a4aa1286a45bc1d42c30f6698dc51521c3749b40"
+    },
+    {
+      "name": "ckb-std",
+      "url": "https://github.com/nervosnetwork/ckb-std.git",
+      "commit": "4657ce2ace29df60d97862800da7c2d998b70d1d"
+    },
+    {
+      "name": "ckb-system-scripts",
+      "url": "https://github.com/nervosnetwork/ckb-system-scripts.git",
+      "commit": "72eb92fca090700dcb398cd8cad8fbd8bad40355"
+    },
+    {
+      "name": "cota-smt",
+      "url": "https://github.com/nervina-labs/cota-smt.git",
+      "commit": "d168e21e109f2940aba5c525a632f4427a44ab45"
+    },
+    {
+      "name": "fiber",
+      "url": "https://github.com/nervosnetwork/fiber.git",
+      "commit": "45ffdac8bd2d56f6e9cd4a01c2b2e4975c3e4397"
+    },
+    {
+      "name": "godwoken",
+      "url": "https://github.com/godwokenrises/godwoken.git",
+      "commit": "c2b1f8501de16ef93a4d659f384041bcb1f7bd92"
+    },
+    {
+      "name": "production-scripts",
+      "url": "https://github.com/nervosnetwork/ckb-production-scripts.git",
+      "commit": "26b0b4f15bb6eeb268b70d7ae006e244b7c06649"
+    },
+    {
+      "name": "rfcs",
+      "url": "https://github.com/nervosnetwork/rfcs.git",
+      "commit": "0c945451c24194f4d34d81195c0159df0a67581a"
+    },
+    {
+      "name": "rgbpp",
+      "url": "https://github.com/RGBPlusPlus/rgbpp.git",
+      "commit": "4abd216dbd5d25b8f59e843de39643f9b7513f9d"
+    }
+  ],
+  "unavailable_attempts": [
+    "https://github.com/joyidwallet/joyid-contracts.git",
+    "https://github.com/nervosnetwork/ckb-open-transaction.git"
+  ]
+}
