@@ -1,0 +1,77 @@
+    Updating crates.io index
+     Locking 40 packages to latest Rust 1.95.0 compatible versions
+      Adding ed25519-dalek v2.2.0 (available: v3.0.0)
+      Adding generic-array v0.14.7 (available: v0.14.9)
+ Downloading crates ...
+  Downloaded buddy-alloc v0.6.0
+  Downloaded ckb-gen-types v1.1.2
+  Downloaded proc-macro2-diagnostics v0.11.0
+  Downloaded int-enum v1.3.0
+  Downloaded gcd v2.3.0
+  Downloaded ckb-std v1.1.0
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling version_check v0.9.5
+   Compiling generic-array v0.14.7
+   Compiling typenum v1.20.1
+   Compiling cfg-if v1.0.5
+   Compiling semver v1.0.28
+   Compiling rustc_version v0.4.1
+   Compiling syn v2.0.119
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling find-msvc-tools v0.1.15
+   Compiling proc-macro2-diagnostics v0.11.0
+   Compiling shlex v2.0.1
+   Compiling heck v0.5.0
+   Compiling cc v1.10.0
+   Compiling strum_macros v0.27.2
+   Compiling digest v0.10.7
+   Compiling curve25519-dalek v4.1.3
+   Compiling syn v3.0.9
+   Compiling bytes v1.12.1
+   Compiling molecule v0.9.2
+   Compiling strum v0.27.2
+   Compiling ckb-std v1.1.0
+   Compiling signature v2.2.0
+   Compiling seq-macro v0.3.6
+   Compiling subtle v2.6.1
+   Compiling ckb-gen-types v1.1.2
+   Compiling int-enum v1.3.0
+   Compiling ed25519 v2.2.3
+   Compiling sha2 v0.10.9
+   Compiling gcd v2.3.0
+   Compiling buddy-alloc v0.6.0
+   Compiling ed25519-dalek v2.2.0
+   Compiling blake2b-ref v0.3.1
+   Compiling wo01-contract v0.1.0 (/workspace/ckb_Storage/experiments/contracts)
+error[E0599]: no method named `finalize` found for unit type `()` in the current scope
+  --> src/main.rs:12:23
+   |
+11 |       blake2b_ref::Blake2bBuilder::new(32).personal(b"ckb-default-hash").build()
+   |       -                                                                  ------- method `finalize` is available on `&mut Blake2b`
+   |  _____|
+   | |
+12 | |         .update(data).finalize(&mut out);
+   | |                      -^^^^^^^^ method not found in `()`
+   | |______________________|
+   |
+   |
+note: method `update` modifies its receiver in-place, it is not meant to be used in method chains.
+  --> src/main.rs:12:10
+   |
+12 |         .update(data).finalize(&mut out);
+   |          ^^^^^^ this call modifies its receiver in-place
+
+warning: unused import: `ckb_types::prelude`
+ --> src/main.rs:4:38
+  |
+4 | use ckb_std::{ckb_constants::Source, ckb_types::prelude::*, high_level::*};
+  |                                      ^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+For more information about this error, try `rustc --explain E0599`.
+warning: `wo01-contract` (bin "wo01-contract") generated 1 warning
+error: could not compile `wo01-contract` (bin "wo01-contract") due to 1 previous error; 1 warning emitted

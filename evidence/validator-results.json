@@ -1,0 +1,721 @@
+{
+  "capacity_measurements": [
+    {
+      "args_bytes": 0,
+      "data_bytes": 0,
+      "name": "empty_args",
+      "occupied_ckb": 41,
+      "occupied_shannons": 4100000000,
+      "serialized_output_bytes": 77,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 20,
+      "data_bytes": 0,
+      "name": "args_20_standard_shape",
+      "occupied_ckb": 61,
+      "occupied_shannons": 6100000000,
+      "serialized_output_bytes": 97,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 32,
+      "data_bytes": 0,
+      "name": "args_32_policy",
+      "occupied_ckb": 73,
+      "occupied_shannons": 7300000000,
+      "serialized_output_bytes": 109,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 64,
+      "data_bytes": 0,
+      "name": "args_64_two_keys",
+      "occupied_ckb": 105,
+      "occupied_shannons": 10500000000,
+      "serialized_output_bytes": 141,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 0,
+      "data_bytes": 32,
+      "name": "pool_root",
+      "occupied_ckb": 73,
+      "occupied_shannons": 7300000000,
+      "serialized_output_bytes": 77,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 20,
+      "data_bytes": 16,
+      "name": "args_20_type_32_data_16",
+      "occupied_ckb": 142,
+      "occupied_shannons": 14200000000,
+      "serialized_output_bytes": 182,
+      "type_args_bytes": 32
+    },
+    {
+      "args_bytes": 22,
+      "data_bytes": 0,
+      "name": "omnilock_base_shape",
+      "occupied_ckb": 63,
+      "occupied_shannons": 6300000000,
+      "serialized_output_bytes": 99,
+      "type_args_bytes": null
+    },
+    {
+      "args_bytes": 20,
+      "data_bytes": 0,
+      "name": "acp_base_shape",
+      "occupied_ckb": 61,
+      "occupied_shannons": 6100000000,
+      "serialized_output_bytes": 97,
+      "type_args_bytes": null
+    }
+  ],
+  "cases": [
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 95900000000,
+      "name": "capacity_empty_args_exact",
+      "serialized_transaction_bytes": 246,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0xf4610900) <= capacity (0xf46108ff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 95900000001,
+      "name": "capacity_empty_args_minus_one_shannon",
+      "serialized_transaction_bytes": 246,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 93900000000,
+      "name": "capacity_args_20_standard_shape_exact",
+      "serialized_transaction_bytes": 266,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x16b969d00) <= capacity (0x16b969cff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 93900000001,
+      "name": "capacity_args_20_standard_shape_minus_one_shannon",
+      "serialized_transaction_bytes": 266,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 92700000000,
+      "name": "capacity_args_32_policy_exact",
+      "serialized_transaction_bytes": 278,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x1b31d2900) <= capacity (0x1b31d28ff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 92700000001,
+      "name": "capacity_args_32_policy_minus_one_shannon",
+      "serialized_transaction_bytes": 278,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 89500000000,
+      "name": "capacity_args_64_two_keys_exact",
+      "serialized_transaction_bytes": 310,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x271d94900) <= capacity (0x271d948ff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 89500000001,
+      "name": "capacity_args_64_two_keys_minus_one_shannon",
+      "serialized_transaction_bytes": 310,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 92700000000,
+      "name": "capacity_pool_root_exact",
+      "serialized_transaction_bytes": 278,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x1b31d2900) <= capacity (0x1b31d28ff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 92700000001,
+      "name": "capacity_pool_root_minus_one_shannon",
+      "serialized_transaction_bytes": 278,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 93700000000,
+      "name": "capacity_omnilock_base_shape_exact",
+      "serialized_transaction_bytes": 268,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x177825f00) <= capacity (0x177825eff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 93700000001,
+      "name": "capacity_omnilock_base_shape_minus_one_shannon",
+      "serialized_transaction_bytes": 268,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 539,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 93900000000,
+      "name": "capacity_acp_base_shape_exact",
+      "serialized_transaction_bytes": 266,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x16b969d00) <= capacity (0x16b969cff))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 93900000001,
+      "name": "capacity_acp_base_shape_minus_one_shannon",
+      "serialized_transaction_bytes": 266,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1720212,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "standard_secp_owner_spend",
+      "serialized_transaction_bytes": 388,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code -31 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/709f3fda12f561cfacf92273c57a98fede188a3f1a59b1f888d113f9cce08649.html#-31 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "standard_secp_wrong_signer",
+      "serialized_transaction_bytes": 388,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1728521,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "existing_multisig_1of2_owner",
+      "serialized_transaction_bytes": 432,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1734665,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "existing_multisig_1of2_independent_recovery",
+      "serialized_transaction_bytes": 432,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code -52 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/43400de165f0821abf63dcac299bbdf7fd73898675ee4ddb099b0a0d8db63bfb.html#-52 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "existing_multisig_1of2_unauthorized",
+      "serialized_transaction_bytes": 432,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1845650,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "policy_owner_spend",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1814718,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "policy_independent_recovery",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_unauthorized_signer",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_forged_signature",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 21 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#21 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_forged_policy",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_wrong_recovery_path",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 100000000,
+      "name": "policy_output_tamper",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1863630,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "policy_recovery_rotates_lock",
+      "serialized_transaction_bytes": 407,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 21 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f.html#21 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_old_owner_after_rotation",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1832713,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "policy_new_owner_after_rotation",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1832734,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "policy_old_owner_can_spend_late_old_lock_deposit",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "name": "policy_first_spend_resolves",
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "error": "Dead(OutPoint(0x24aee21e94d4f66cfe3e791f3507bac3e4bf7877dce38470ae08c2179920368d00000000))",
+      "expected_accept": false,
+      "failure_stage": "resolver",
+      "name": "policy_replay_dead_input",
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0xf4610900) <= capacity (0xf4610518))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 1000,
+      "name": "embedded_exit_cannot_pay_fee_at_minimum",
+      "serialized_transaction_bytes": 246,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1836954,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "embedded_authorized_owner",
+      "serialized_transaction_bytes": 310,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/0622d2beff78f53c8bf3cdddb72cc14713ddae1671de36bb658f14aea2bbabb2.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "embedded_wrong_owner",
+      "serialized_transaction_bytes": 310,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1909310,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_independent_exit_no_operator",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 14 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#14 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_forged_signature",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_forged_sibling",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_forged_index",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_unauthorized_key",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_excessive_claim",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 52 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#52 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_reauthorized_overwithdraw",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 52 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#52 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_reauthorized_wrong_next_root",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "name": "pool_first_exit_resolves",
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1914720,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_concurrent_exit_individually_valid",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "error": "Dead(OutPoint(0x501a8bdde88d2d8cf14904df1b7cae09e73a71b753180c700d32c93fcf8c901b00000000))",
+      "expected_accept": false,
+      "failure_stage": "resolver",
+      "name": "pool_concurrent_exit_conflicts",
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "error": "Dead(OutPoint(0x501a8bdde88d2d8cf14904df1b7cae09e73a71b753180c700d32c93fcf8c901b00000000))",
+      "expected_accept": false,
+      "failure_stage": "resolver",
+      "name": "pool_repeated_exit_dead_input",
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_stale_proof_on_successor",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1912690,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_updated_proof_on_successor",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 43 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#43 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_repeat_claim_on_successor",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 40 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#40 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_missing_state_proof",
+      "serialized_transaction_bytes": 387,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1912690,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_sequential_exit_1",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1894338,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_sequential_exit_2",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1911218,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_sequential_exit_3",
+      "serialized_transaction_bytes": 439,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(InsufficientCellCapacity(Outputs[1]): expected occupied capacity (0x16b969d00) <= capacity (0x5f5dd18))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": 1000,
+      "name": "pool_one_ckb_claim_exit_below_recipient_floor",
+      "serialized_transaction_bytes": 528,
+      "test_passed": true
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ScriptNotFound: code_hash: Byte32(0x5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f) })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "policy_missing_code_dependency",
+      "serialized_transaction_bytes": 338,
+      "test_passed": true
+    }
+  ],
+  "consensus_max_block_bytes": 597000,
+  "consensus_max_block_cycles": 3500000000,
+  "deployment": [
+    {
+      "code_data_hash": "5bb6382ab2b4eaea415039b38b7676e66c01e02914ab2ebbf22645fce381ab5f",
+      "contract": "policy",
+      "deployment_occupied_ckb_with_20_byte_lock": 52621,
+      "elf_bytes": 52560
+    },
+    {
+      "code_data_hash": "75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba",
+      "contract": "pool",
+      "deployment_occupied_ckb_with_20_byte_lock": 57189,
+      "elf_bytes": 57128
+    },
+    {
+      "code_data_hash": "0622d2beff78f53c8bf3cdddb72cc14713ddae1671de36bb658f14aea2bbabb2",
+      "contract": "embedded",
+      "deployment_occupied_ckb_with_20_byte_lock": 44677,
+      "elf_bytes": 44616
+    },
+    {
+      "code_data_hash": "709f3fda12f561cfacf92273c57a98fede188a3f1a59b1f888d113f9cce08649",
+      "contract": "standard_secp",
+      "deployment_occupied_ckb_with_20_byte_lock": 52109,
+      "elf_bytes": 52048
+    },
+    {
+      "code_data_hash": "43400de165f0821abf63dcac299bbdf7fd73898675ee4ddb099b0a0d8db63bfb",
+      "contract": "standard_multisig",
+      "deployment_occupied_ckb_with_20_byte_lock": 52485,
+      "elf_bytes": 52424
+    },
+    {
+      "code_data_hash": "9799bee251b975b82c45a02154ce28cec89c5853ecc14d12b7b8cccfc19e0af4",
+      "contract": "standard_secp_data",
+      "deployment_occupied_ckb_with_20_byte_lock": 1048637,
+      "elf_bytes": 1048576
+    }
+  ],
+  "max_test_cycles": 100000000,
+  "scope": "real CKB noncontextual, capacity and VM script verifiers; real outpoint resolver with in-memory cells; no live chain, PoW, network, mempool or mainnet deployment"
+}

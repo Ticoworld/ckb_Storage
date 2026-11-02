@@ -1,0 +1,22 @@
+   Compiling wo01-validator v0.1.0 (/workspace/ckb_Storage/experiments/validator)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.87s
+     Running `experiments/validator/target/debug/wo01-validator`
+PASS capacity_empty_args_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_empty_args_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0xf4610900) <= capacity (0xf46108ff))
+PASS capacity_args_20_standard_shape_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_args_20_standard_shape_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x16b969d00) <= capacity (0x16b969cff))
+PASS capacity_args_32_policy_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_args_32_policy_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x1b31d2900) <= capacity (0x1b31d28ff))
+PASS capacity_args_64_two_keys_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_args_64_two_keys_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x271d94900) <= capacity (0x271d948ff))
+PASS capacity_pool_root_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_pool_root_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x1b31d2900) <= capacity (0x1b31d28ff))
+PASS capacity_omnilock_base_shape_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_omnilock_base_shape_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x177825f00) <= capacity (0x177825eff))
+PASS capacity_acp_base_shape_exact accepted=true cycles=Some(539) stage=None 
+PASS capacity_acp_base_shape_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0x16b969d00) <= capacity (0x16b969cff))
+FAIL policy_owner_spend accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Lock, cause: VM Internal Error: InvalidInstruction { pc: 93094, instruction: 336213423 } })
+
+thread 'main' (6706) panicked at src/main.rs:53:3:
+unexpected result: policy_owner_spend
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
