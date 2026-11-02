@@ -321,12 +321,58 @@ fn refresh_proof(own_index: usize, old_proof: &[u8], exit_witness: &[u8]) -> Vec
     updated[32 * divergence..32 * divergence + 32].copy_from_slice(&changed);
     updated
 }
-fn replace_pool_proof(tx: TransactionView, p: &[u8], k: &SigningKey) -> TransactionView {
-    let mut w = tx.witnesses().get(0).unwrap().raw_data().to_vec();
-    let depth = w[44] as usize;
-    assert_eq!(p.len(), 32 * depth);
-    w[45..45 + p.len()].copy_from_slice(p);
-    w[45 + p.len()..].copy_from_slice(&k.sign(tx.hash().as_slice()).to_bytes());
+// Production-shaped local builder: no full tree, other keys or global account database.
+fn assemble_exit_from_local_proof(
+    lab: &Lab,
+    input: &CellMeta,
+    payout: &Script,
+    index: usize,
+    amount: u64,
+    k: &SigningKey,
+    p: &[u8],
+) -> TransactionView {
+    assert_eq!(p.len() % 32, 0);
+    let depth = p.len() / 32;
+    let fold = |mut h: [u8; 32]| {
+        for (level, s) in p.chunks_exact(32).enumerate() {
+            let s: [u8; 32] = s.try_into().unwrap();
+            h = if (index >> level) & 1 == 0 {
+                node(h, s)
+            } else {
+                node(s, h)
+            }
+        }
+        h
+    };
+    assert_eq!(
+        fold(leaf(k, amount)).as_slice(),
+        input.mem_cell_data.as_ref().unwrap().as_ref()
+    );
+    let next = fold(hash([2]));
+    let mut empty = hash([2]);
+    for _ in 0..depth {
+        empty = node(empty, empty)
+    }
+    let cap: u64 = input.cell_output.capacity().into();
+    let (outputs, data) = if next == empty {
+        (vec![output(payout, cap - 1000)], vec![vec![]])
+    } else {
+        (
+            vec![
+                output(&input.cell_output.lock(), cap - amount),
+                output(payout, amount - 1000),
+            ],
+            vec![next.to_vec(), vec![]],
+        )
+    };
+    let tx = lab.tx(input, outputs, data, vec![]);
+    let mut w = vec![];
+    w.extend((index as u32).to_le_bytes());
+    w.extend(amount.to_le_bytes());
+    w.extend(k.verifying_key().as_bytes());
+    w.push(depth as u8);
+    w.extend(p);
+    w.extend(k.sign(tx.hash().as_slice()).to_bytes());
     tx.as_advanced_builder()
         .set_witnesses(vec![Bytes::from(w).pack()])
         .build()
@@ -862,10 +908,14 @@ fn main() {
         &withdrawal.witnesses().get(0).unwrap().raw_data(),
     );
     assert_eq!(refreshed, proof(&new_leaves, 1));
-    let refreshed_tx = replace_pool_proof(
-        make_withdraw(&lab, &next, &new_leaves, 1, &keys[1], 100 * CKB),
-        &refreshed,
+    let refreshed_tx = assemble_exit_from_local_proof(
+        &lab,
+        &next,
+        &payout_lock,
+        1,
+        100 * CKB,
         &keys[1],
+        &refreshed,
     );
     lab.check(
         "pool_public_witness_refresh_without_global_tree",
@@ -908,13 +958,22 @@ fn main() {
     let mut cur = next;
     let mut state = new_leaves.clone();
     for i in 1..4 {
-        let mut t = make_withdraw(&lab, &cur, &state, i, &keys[i], 100 * CKB);
-        if i == 3 {
+        let t = if i == 3 {
             assert_eq!(late_proof, proof(&state, 3));
-            t = replace_pool_proof(t, &late_proof, &keys[3]);
+            assemble_exit_from_local_proof(
+                &lab,
+                &cur,
+                &payout_lock,
+                3,
+                100 * CKB,
+                &keys[3],
+                &late_proof,
+            )
         } else {
+            let t = make_withdraw(&lab, &cur, &state, i, &keys[i], 100 * CKB);
             late_proof = refresh_proof(3, &late_proof, &t.witnesses().get(0).unwrap().raw_data());
-        }
+            t
+        };
         lab.check(
             &format!("pool_sequential_exit_{i}"),
             t.clone(),

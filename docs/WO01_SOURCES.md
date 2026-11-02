@@ -114,3 +114,11 @@ Commit `4abd216dbd5d25b8f59e843de39643f9b7513f9d`; https://github.com/RGBPlusPlu
 
 - [contracts/rgbpp-lock/README.md](https://github.com/RGBPlusPlus/rgbpp/blob/4abd216dbd5d25b8f59e843de39643f9b7513f9d/contracts/rgbpp-lock/README.md)
 
+
+## Additional pinned VM and timing references
+
+- [rfcs/0003-ckb-vm/0003-ckb-vm.md](https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0003-ckb-vm/0003-ckb-vm.md) — Status: Final
+- [rfcs/0003-ckb-vm/0003-ckb-vm.zh.md](https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0003-ckb-vm/0003-ckb-vm.zh.md) — Status: Final
+- [rfcs/0009-vm-syscalls/0009-vm-syscalls.md](https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0009-vm-syscalls/0009-vm-syscalls.md) — Status: Active
+- [rfcs/0017-tx-valid-since/0017-tx-valid-since.md](https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0017-tx-valid-since/0017-tx-valid-since.md) — Status: Active
+- [rfcs/0046-syscalls-summary/0046-syscalls-summary.md](https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0046-syscalls-summary/0046-syscalls-summary.md) — Status: Draft (for Informational)

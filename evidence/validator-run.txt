@@ -12,7 +12,6 @@ omnilock 280dd97ac0930ea1ed766a18d49478229347c832
 production-scripts 26b0b4f15bb6eeb268b70d7ae006e244b7c06649
 rfcs 0c945451c24194f4d34d81195c0159df0a67581a
 rgbpp 4abd216dbd5d25b8f59e843de39643f9b7513f9d
-   Compiling wo01-contract v0.1.0 (/workspace/ckb_Storage/experiments/contracts)
 warning: unused import: `ckb_types::prelude`
  --> src/main.rs:4:38
   |
@@ -42,8 +41,7 @@ warning: function `root` is never used
    |    ^^^^
 
 warning: `wo01-contract` (bin "wo01-contract") generated 4 warnings
-    Finished `release` profile [optimized] target(s) in 0.84s
-   Compiling wo01-contract v0.1.0 (/workspace/ckb_Storage/experiments/contracts)
+    Finished `release` profile [optimized] target(s) in 0.04s
 warning: unused import: `ckb_types::prelude`
  --> src/main.rs:4:38
   |
@@ -53,8 +51,7 @@ warning: unused import: `ckb_types::prelude`
   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
 
 warning: `wo01-contract` (bin "wo01-contract") generated 1 warning
-    Finished `release` profile [optimized] target(s) in 0.80s
-   Compiling wo01-contract v0.1.0 (/workspace/ckb_Storage/experiments/contracts)
+    Finished `release` profile [optimized] target(s) in 0.02s
 warning: unused import: `ckb_types::prelude`
  --> src/main.rs:4:38
   |
@@ -90,9 +87,8 @@ warning: function `root` is never used
    |    ^^^^
 
 warning: `wo01-contract` (bin "wo01-contract") generated 5 warnings
-    Finished `release` profile [optimized] target(s) in 0.76s
-   Compiling wo01-validator v0.1.0 (/workspace/ckb_Storage/experiments/validator)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.19s
+    Finished `release` profile [optimized] target(s) in 0.03s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.25s
      Running `experiments/validator/target/debug/wo01-validator`
 PASS capacity_empty_args_exact accepted=true cycles=Some(539) stage=None 
 PASS capacity_empty_args_minus_one_shannon accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[0]): expected occupied capacity (0xf4610900) <= capacity (0xf46108ff))

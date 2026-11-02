@@ -1,0 +1,16 @@
+{
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)\nbinary: rustc\ncommit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860\ncommit-date: 2026-04-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.95.0\nLLVM version: 22.1.2\n",
+  "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+  "host": "x86_64",
+  "contract_target": "riscv64imac-unknown-none-elf",
+  "contract_rustflags": "-C passes=lower-atomic",
+  "build_jobs": 3,
+  "toolchain_home_note": "toolchain installed under /workspace/wo01-tools; portable reproduction instructions in experiments/README.md",
+  "release_profile": "opt-level=s; lto=true; codegen-units=1; panic=abort; strip=true",
+  "source_sha256": {
+    "experiments/contracts/src/main.rs": "b7d7df41116b481983ad6c005365aafa1f6b1e332f9fa72afa2f58e975ecd015",
+    "experiments/validator/src/main.rs": "f97c6ceb6d6ed45d1a8edca9204b9e64345831f50e134355388a8f410a18fd2e",
+    "experiments/contracts/Cargo.lock": "da5fe09a2c4b73f8310249f6bedbaf72491e6fd685c9cd00f71cb981405eaa91",
+    "experiments/validator/Cargo.lock": "3a18eb7b50ac73e6cc5744368d0831fd3e26030f35b4aa499e555f09360a664f"
+  }
+}

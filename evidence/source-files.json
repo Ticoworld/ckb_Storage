@@ -318,5 +318,45 @@
     "sha256": "c285ea94f5b5223fbbaac70ff86a15b05a369a15881f20593578977461fa9552",
     "status": null,
     "url": "https://github.com/RGBPlusPlus/rgbpp/blob/4abd216dbd5d25b8f59e843de39643f9b7513f9d/contracts/rgbpp-lock/README.md"
+  },
+  {
+    "source": "rfcs",
+    "commit": "0c945451c24194f4d34d81195c0159df0a67581a",
+    "path": "rfcs/0003-ckb-vm/0003-ckb-vm.md",
+    "sha256": "897c73b7f6a88165e16239785a400cf66b397124fcba478731109088befeb660",
+    "status": "Status: Final",
+    "url": "https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0003-ckb-vm/0003-ckb-vm.md"
+  },
+  {
+    "source": "rfcs",
+    "commit": "0c945451c24194f4d34d81195c0159df0a67581a",
+    "path": "rfcs/0003-ckb-vm/0003-ckb-vm.zh.md",
+    "sha256": "84ae010e49515b495325e37d2fea2e3ad74fc835733f99aaea93b78f4be9bfa5",
+    "status": "Status: Final",
+    "url": "https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0003-ckb-vm/0003-ckb-vm.zh.md"
+  },
+  {
+    "source": "rfcs",
+    "commit": "0c945451c24194f4d34d81195c0159df0a67581a",
+    "path": "rfcs/0009-vm-syscalls/0009-vm-syscalls.md",
+    "sha256": "55f614e8ad1ed1bbe0389d1a6c4dcf4d9d7875ef2862fc0113271442c99445dd",
+    "status": "Status: Active",
+    "url": "https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0009-vm-syscalls/0009-vm-syscalls.md"
+  },
+  {
+    "source": "rfcs",
+    "commit": "0c945451c24194f4d34d81195c0159df0a67581a",
+    "path": "rfcs/0017-tx-valid-since/0017-tx-valid-since.md",
+    "sha256": "bfdbac5b8a6a943ba99c04f6971de98953fdb92b333ab815dfd6ecf524e954d1",
+    "status": "Status: Active",
+    "url": "https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0017-tx-valid-since/0017-tx-valid-since.md"
+  },
+  {
+    "source": "rfcs",
+    "commit": "0c945451c24194f4d34d81195c0159df0a67581a",
+    "path": "rfcs/0046-syscalls-summary/0046-syscalls-summary.md",
+    "sha256": "e90c12075fe92450fd921f9077f99c78cc49ea7ad198542855739b1e6199ffe0",
+    "status": "Status: Draft (for Informational)",
+    "url": "https://github.com/nervosnetwork/rfcs/blob/0c945451c24194f4d34d81195c0159df0a67581a/rfcs/0046-syscalls-summary/0046-syscalls-summary.md"
   }
 ]
