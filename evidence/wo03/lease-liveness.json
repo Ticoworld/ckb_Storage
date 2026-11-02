@@ -1,0 +1,23 @@
+{
+  "case_offline_after_lease_expiry": {
+    "delete_all_claim_state": {
+      "claim_enforceable_after_expiry": false,
+      "reason": "no consensus record from which the owner can prove amount, identity, and unspent status"
+    },
+    "retain_owner_receipt_only": {
+      "claim_enforceable_after_expiry": false,
+      "reason": "a signed receipt alone cannot establish that it was not already spent; needs consensus-visible replay/nullifier state and an authenticated anchor"
+    },
+    "retain_receipt_and_nullifier_index": {
+      "claim_enforceable_after_expiry": true,
+      "additional_persistent_state_required": true,
+      "resource_rent_ends": false,
+      "reason": "spend/replay state and data availability remain live until claim is consumed"
+    },
+    "renewal_censored_during_grace": {
+      "claim_enforceable": false,
+      "unless": "consensus keeps the claim live and accepts a proof/exit independent of the censored lease renewal"
+    }
+  },
+  "conservation": "expiry may delete state only after all monetary rights are consumed or made unspendable; preserving rights requires persistent consensus-visible anti-replay state and available proof data"
+}
