@@ -1,0 +1,5 @@
+First CKB RocksDB fixture run failure (default.db-options, pinned CKB source, unchunked 100,000-cell final delete):
+
+Error: Operation failed. Try again. Transaction could not check for conflicts for operation at SequenceNumber 300000 as the MemTable only contains changes newer than SequenceNumber 300001. Increasing the value of the max_write_buffer_size_to_maintain option could reduce the frequency of this error.
+
+The harness was changed to commit bounded 1,000-cell chunks. This is retained as evidence that a single large synthetic batch exceeded the configured RocksDB transaction-maintenance window; it is not a protocol validation failure.

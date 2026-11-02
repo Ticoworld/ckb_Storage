@@ -1,0 +1,1509 @@
+{
+  "method": "linear byte extrapolation from 100,000 synthetic no-data CKB CellEntry rows, 61 occupied bytes each",
+  "measured_samples": [
+    {
+      "source": "store-fixture.csv",
+      "churn_rounds": 0,
+      "cache_compacted_live_bytes_per_cell": 158.86374
+    },
+    {
+      "source": "store-fixture.csv",
+      "churn_rounds": 1,
+      "cache_compacted_live_bytes_per_cell": 154.79433
+    },
+    {
+      "source": "store-fixture.csv",
+      "churn_rounds": 5,
+      "cache_compacted_live_bytes_per_cell": 159.71792
+    },
+    {
+      "source": "store-fixture-cache0.csv",
+      "churn_rounds": 0,
+      "cache_compacted_live_bytes_per_cell": 158.85837
+    },
+    {
+      "source": "store-fixture-cache0.csv",
+      "churn_rounds": 1,
+      "cache_compacted_live_bytes_per_cell": 154.75827
+    },
+    {
+      "source": "store-fixture-cache0.csv",
+      "churn_rounds": 5,
+      "cache_compacted_live_bytes_per_cell": 159.56097
+    }
+  ],
+  "measured_post_compaction_cell_db_bytes_per_cell_range": [
+    154.75827,
+    159.71792
+  ],
+  "scenario_count": 54,
+  "scenarios": [
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.6,
+      "aggregate_additional_capacity_ckb": 60000000,
+      "aggregate_additional_capacity_usd": 600000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.3,
+      "aggregate_additional_capacity_ckb": 30000000,
+      "aggregate_additional_capacity_usd": 300000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.15,
+      "aggregate_additional_capacity_ckb": 15000000,
+      "aggregate_additional_capacity_usd": 150000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.07,
+      "aggregate_additional_capacity_ckb": 7000000,
+      "aggregate_additional_capacity_usd": 70000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.03,
+      "aggregate_additional_capacity_ckb": 3000000,
+      "aggregate_additional_capacity_usd": 30000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 60.0,
+      "aggregate_additional_capacity_ckb": 60000000,
+      "aggregate_additional_capacity_usd": 60000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 30000000,
+      "aggregate_additional_capacity_usd": 30000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 15.0,
+      "aggregate_additional_capacity_ckb": 15000000,
+      "aggregate_additional_capacity_usd": 15000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 7.0,
+      "aggregate_additional_capacity_ckb": 7000000,
+      "aggregate_additional_capacity_usd": 7000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 3.0,
+      "aggregate_additional_capacity_ckb": 3000000,
+      "aggregate_additional_capacity_usd": 3000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 600.0,
+      "aggregate_additional_capacity_ckb": 60000000,
+      "aggregate_additional_capacity_usd": 600000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 300.0,
+      "aggregate_additional_capacity_ckb": 30000000,
+      "aggregate_additional_capacity_usd": 300000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 150.0,
+      "aggregate_additional_capacity_ckb": 15000000,
+      "aggregate_additional_capacity_usd": 150000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 70.0,
+      "aggregate_additional_capacity_ckb": 7000000,
+      "aggregate_additional_capacity_usd": 70000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 3000000,
+      "aggregate_additional_capacity_usd": 30000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270.0,
+        159717920.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.6,
+      "aggregate_additional_capacity_ckb": 6000000000,
+      "aggregate_additional_capacity_usd": 60000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.3,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 30000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.15,
+      "aggregate_additional_capacity_ckb": 1500000000,
+      "aggregate_additional_capacity_usd": 15000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.07,
+      "aggregate_additional_capacity_ckb": 700000000,
+      "aggregate_additional_capacity_usd": 7000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.03,
+      "aggregate_additional_capacity_ckb": 300000000,
+      "aggregate_additional_capacity_usd": 3000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 60.0,
+      "aggregate_additional_capacity_ckb": 6000000000,
+      "aggregate_additional_capacity_usd": 6000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 3000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 15.0,
+      "aggregate_additional_capacity_ckb": 1500000000,
+      "aggregate_additional_capacity_usd": 1500000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 7.0,
+      "aggregate_additional_capacity_ckb": 700000000,
+      "aggregate_additional_capacity_usd": 700000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 3.0,
+      "aggregate_additional_capacity_ckb": 300000000,
+      "aggregate_additional_capacity_usd": 300000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 600.0,
+      "aggregate_additional_capacity_ckb": 6000000000,
+      "aggregate_additional_capacity_usd": 60000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 300.0,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 30000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 150.0,
+      "aggregate_additional_capacity_ckb": 1500000000,
+      "aggregate_additional_capacity_usd": 15000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 70.0,
+      "aggregate_additional_capacity_ckb": 700000000,
+      "aggregate_additional_capacity_usd": 7000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 300000000,
+      "aggregate_additional_capacity_usd": 3000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 100000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        15475827000.000002,
+        15971792000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.6,
+      "aggregate_additional_capacity_ckb": 60000000000,
+      "aggregate_additional_capacity_usd": 600000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.3,
+      "aggregate_additional_capacity_ckb": 30000000000,
+      "aggregate_additional_capacity_usd": 300000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.15,
+      "aggregate_additional_capacity_ckb": 15000000000,
+      "aggregate_additional_capacity_usd": 150000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.07,
+      "aggregate_additional_capacity_ckb": 7000000000,
+      "aggregate_additional_capacity_usd": 70000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.03,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 30000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 0.01,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 60.0,
+      "aggregate_additional_capacity_ckb": 60000000000,
+      "aggregate_additional_capacity_usd": 60000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 30000000000,
+      "aggregate_additional_capacity_usd": 30000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 15.0,
+      "aggregate_additional_capacity_ckb": 15000000000,
+      "aggregate_additional_capacity_usd": 15000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 7.0,
+      "aggregate_additional_capacity_ckb": 7000000000,
+      "aggregate_additional_capacity_usd": 7000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 3.0,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 3000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 1.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 1,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 61,
+      "additional_recoverable_capacity_ckb_per_user": 60,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 600.0,
+      "aggregate_additional_capacity_ckb": 60000000000,
+      "aggregate_additional_capacity_usd": 600000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 2,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 31,
+      "additional_recoverable_capacity_ckb_per_user": 30,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 300.0,
+      "aggregate_additional_capacity_ckb": 30000000000,
+      "aggregate_additional_capacity_usd": 300000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 1.967741935483871,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 4,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 16,
+      "additional_recoverable_capacity_ckb_per_user": 15,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 150.0,
+      "aggregate_additional_capacity_ckb": 15000000000,
+      "aggregate_additional_capacity_usd": 150000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 3.8125,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 8,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 8,
+      "additional_recoverable_capacity_ckb_per_user": 7,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 70.0,
+      "aggregate_additional_capacity_ckb": 7000000000,
+      "aggregate_additional_capacity_usd": 70000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 7.625,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 16,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 4,
+      "additional_recoverable_capacity_ckb_per_user": 3,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 30.0,
+      "aggregate_additional_capacity_ckb": 3000000000,
+      "aggregate_additional_capacity_usd": 30000000000.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 15.25,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    },
+    {
+      "users_outputs": 1000000000,
+      "ckb_price_usd": 10.0,
+      "bytes_per_ckb_protocol_scenario": 61,
+      "minimum_output_capacity_ckb_including_1ckb_principal": 1,
+      "additional_recoverable_capacity_ckb_per_user": 0,
+      "principal_ckb_per_user": 1,
+      "additional_capacity_usd_per_user": 0.0,
+      "aggregate_additional_capacity_ckb": 0,
+      "aggregate_additional_capacity_usd": 0.0,
+      "fresh_output_occupancy_bytes_per_user": 61,
+      "same_61ckb_capacity_output_count_ratio": 61.0,
+      "measured_compacted_cell_db_bytes_per_user_low_high": [
+        154.75827,
+        159.71792
+      ],
+      "linear_projected_compacted_cell_db_bytes_low_high": [
+        154758270000.0,
+        159717920000.0
+      ],
+      "measured_data_scope": "CKB cell, cell_data, cell_data_hash columns; no block body/indexer/archive",
+      "estimated_usd_storage_rent": null,
+      "safe_network_admission_count": null,
+      "current_legacy_total_supply_ckb": null,
+      "legacy_capacity_entitlement_ckb": null,
+      "status": "capacity arithmetic measured; byte projections extrapolated; no safe-capacity claim"
+    }
+  ],
+  "unavailable_inputs": [
+    "full-node live-cell count",
+    "historical database footprint",
+    "indexer footprint",
+    "per-node hardware/resource cost",
+    "network safe byte budget",
+    "current total supply and outstanding legacy capacity exercise"
+  ],
+  "prohibited_proxy_note": "WO03's 45,000,000,000 CKB entitlement placeholder is not used; no source verified that as current mainnet supply."
+}

@@ -1,0 +1,19 @@
+{
+  "source_commit": "a4aa1286a45bc1d42c30f6698dc51521c3749b40",
+  "mainnet_genesis_timestamp_ms": 1573852190812,
+  "genesis_issued_cells_count": 665,
+  "genesis_issued_cells_capacity_shannons": 3359873503700000000,
+  "genesis_issued_cells_capacity_ckb": 33598735036.999996,
+  "genesis_system_cells_capacity_shannons": 126461700000000,
+  "genesis_system_cells_capacity_ckb": 1264617.0,
+  "genesis_cells_sum_ckb": 33599999654.0,
+  "secondary_issuance_ckb_per_year": 1344000000,
+  "secondary_reward_constant_shannons_per_epoch": 61369863013698,
+  "epoch_duration_target_seconds": 14400,
+  "derived_epochs_per_year": 2190,
+  "initial_primary_issuance_ckb_per_year": 4200000000,
+  "primary_halving_interval_years": 4,
+  "primary_lifetime_total_ckb_derived": 33600000000,
+  "current_total_supply_ckb": null,
+  "note": "Genesis and schedule are from pinned source; current total outstanding supply cannot be recovered without an accessible mainnet tip/state snapshot."
+}

@@ -1,0 +1,6 @@
+# Retained fixture failures and corrections
+
+- First offline CKB store build stopped because the local Rust crate cache lacked `parking_lot`. After permission to fetch public pinned crates, bindgen could not find `stdbool.h`; passing GCC 14's existing include directory through `BINDGEN_EXTRA_CLANG_ARGS` resolved it without installing system packages.
+- The first 100,000-cell single RocksDB transaction exceeded `max_write_buffer_size_to_maintain` and returned a transaction conflict at sequence 300,000. The fixture now writes in 1,000-cell commits; the failure output is in [`initial-large-batch-failure.txt`](initial-large-batch-failure.txt).
+- An early standalone Cargo harness used a separate dependency lock resolution and produced a segfault/corrupted partial output. Those bytes were excluded. The final fixture is compiled as a temporary example inside the pinned CKB workspace, using its committed `Cargo.lock`; the run script removes the temporary source file afterward.
+- The first successful files were created in `/tmp`, which is RAM-backed in this environment. Their file sizes are retained for reproducibility, but their timings are not reported as disk timings. The primary result was rerun on the workspace overlay filesystem.

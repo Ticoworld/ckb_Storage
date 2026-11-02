@@ -1,0 +1,6 @@
+WO04 live-state access attempt — 2026-11-02 UTC
+
+Request: GET https://explorer.nervos.org/api/v1/statistics
+Result: outbound CONNECT tunnel rejected the request with HTTP 403 (curl reported code 000; no response body or statistics were received).
+
+No mainnet chain download or synchronization was attempted. No current tip height, live-cell count, current total supply, active capacity, or public node disk/RAM report is available in the local evidence. The public CKB documentation checkout reachable from GitHub is pinned at 4d5abdfb038c896a5438e7ccfe06e6282daa41dd (2020-08-25) and does not provide current node hardware or live-state measurements. This is an access/evidence limit, not a claim that the data does not exist elsewhere.

@@ -57,3 +57,7 @@ remain unverified; the inspected CoTA SDK separately allocates 150 CKB.
 
 Work is isolated on **`wo01-storage-research`**, with meaningful milestones
 committed and pushed. The unrelated initial `hello.txt` is retained.
+
+## WO04 — node storage measurements
+
+WO04's decision is **RESEARCH OPEN**. A bounded fixture measured CKB's actual live-cell database columns through 100,000 records without syncing mainnet; the network-wide live-state and safe operator capacity remain unavailable. Start with [the WO04 decision](docs/wo04/DECISION.md), [measurements](docs/wo04/MEASUREMENTS.md), and [reproduction instructions](experiments/wo04/README.md).
