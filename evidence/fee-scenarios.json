@@ -1,0 +1,66 @@
+[
+  {
+    "logical_users": 1,
+    "serialized_bytes": 375,
+    "assumed_shannons_per_kb": 1000,
+    "byte_only_fee_shannons": 375,
+    "cycles": 1839405,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 1,
+    "serialized_bytes": 375,
+    "assumed_shannons_per_kb": 10000,
+    "byte_only_fee_shannons": 3750,
+    "cycles": 1839405,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 10,
+    "serialized_bytes": 624,
+    "assumed_shannons_per_kb": 1000,
+    "byte_only_fee_shannons": 624,
+    "cycles": 1960696,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 10,
+    "serialized_bytes": 624,
+    "assumed_shannons_per_kb": 10000,
+    "byte_only_fee_shannons": 6240,
+    "cycles": 1960696,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 1000,
+    "serialized_bytes": 816,
+    "assumed_shannons_per_kb": 1000,
+    "byte_only_fee_shannons": 816,
+    "cycles": 2094794,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 1000,
+    "serialized_bytes": 816,
+    "assumed_shannons_per_kb": 10000,
+    "byte_only_fee_shannons": 8160,
+    "cycles": 2094794,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 1000000,
+    "serialized_bytes": 1136,
+    "assumed_shannons_per_kb": 1000,
+    "byte_only_fee_shannons": 1136,
+    "cycles": 2278569,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  },
+  {
+    "logical_users": 1000000,
+    "serialized_bytes": 1136,
+    "assumed_shannons_per_kb": 10000,
+    "byte_only_fee_shannons": 11360,
+    "cycles": 2278569,
+    "qualification": "illustrative bytes-only rate; excludes pool policy and cycle-based virtual size"
+  }
+]

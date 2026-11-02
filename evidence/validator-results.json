@@ -83,7 +83,8 @@
       "fee_shannons": 95900000000,
       "name": "capacity_empty_args_exact",
       "serialized_transaction_bytes": 246,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -94,7 +95,8 @@
       "fee_shannons": 95900000001,
       "name": "capacity_empty_args_minus_one_shannon",
       "serialized_transaction_bytes": 246,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -105,7 +107,8 @@
       "fee_shannons": 93900000000,
       "name": "capacity_args_20_standard_shape_exact",
       "serialized_transaction_bytes": 266,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -116,7 +119,8 @@
       "fee_shannons": 93900000001,
       "name": "capacity_args_20_standard_shape_minus_one_shannon",
       "serialized_transaction_bytes": 266,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -127,7 +131,8 @@
       "fee_shannons": 92700000000,
       "name": "capacity_args_32_policy_exact",
       "serialized_transaction_bytes": 278,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -138,7 +143,8 @@
       "fee_shannons": 92700000001,
       "name": "capacity_args_32_policy_minus_one_shannon",
       "serialized_transaction_bytes": 278,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -149,7 +155,8 @@
       "fee_shannons": 89500000000,
       "name": "capacity_args_64_two_keys_exact",
       "serialized_transaction_bytes": 310,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -160,7 +167,8 @@
       "fee_shannons": 89500000001,
       "name": "capacity_args_64_two_keys_minus_one_shannon",
       "serialized_transaction_bytes": 310,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -171,7 +179,8 @@
       "fee_shannons": 92700000000,
       "name": "capacity_pool_root_exact",
       "serialized_transaction_bytes": 278,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -182,7 +191,8 @@
       "fee_shannons": 92700000001,
       "name": "capacity_pool_root_minus_one_shannon",
       "serialized_transaction_bytes": 278,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -193,7 +203,8 @@
       "fee_shannons": 93700000000,
       "name": "capacity_omnilock_base_shape_exact",
       "serialized_transaction_bytes": 268,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -204,7 +215,8 @@
       "fee_shannons": 93700000001,
       "name": "capacity_omnilock_base_shape_minus_one_shannon",
       "serialized_transaction_bytes": 268,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -215,7 +227,8 @@
       "fee_shannons": 93900000000,
       "name": "capacity_acp_base_shape_exact",
       "serialized_transaction_bytes": 266,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -226,7 +239,8 @@
       "fee_shannons": 93900000001,
       "name": "capacity_acp_base_shape_minus_one_shannon",
       "serialized_transaction_bytes": 266,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -237,7 +251,8 @@
       "fee_shannons": 1000,
       "name": "standard_secp_owner_spend",
       "serialized_transaction_bytes": 388,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -248,7 +263,8 @@
       "fee_shannons": 1000,
       "name": "standard_secp_wrong_signer",
       "serialized_transaction_bytes": 388,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -259,7 +275,8 @@
       "fee_shannons": 1000,
       "name": "existing_multisig_1of2_owner",
       "serialized_transaction_bytes": 432,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -270,7 +287,8 @@
       "fee_shannons": 1000,
       "name": "existing_multisig_1of2_independent_recovery",
       "serialized_transaction_bytes": 432,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -281,7 +299,8 @@
       "fee_shannons": 1000,
       "name": "existing_multisig_1of2_unauthorized",
       "serialized_transaction_bytes": 432,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -292,7 +311,8 @@
       "fee_shannons": 1000,
       "name": "policy_owner_spend",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -303,7 +323,8 @@
       "fee_shannons": 1000,
       "name": "policy_independent_recovery",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -314,7 +335,8 @@
       "fee_shannons": 1000,
       "name": "policy_unauthorized_signer",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -325,7 +347,8 @@
       "fee_shannons": 1000,
       "name": "policy_forged_signature",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -336,7 +359,8 @@
       "fee_shannons": 1000,
       "name": "policy_forged_policy",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -347,7 +371,8 @@
       "fee_shannons": 1000,
       "name": "policy_wrong_recovery_path",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -358,7 +383,8 @@
       "fee_shannons": 100000000,
       "name": "policy_output_tamper",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -369,7 +395,8 @@
       "fee_shannons": 1000,
       "name": "policy_recovery_rotates_lock",
       "serialized_transaction_bytes": 407,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -380,7 +407,8 @@
       "fee_shannons": 1000,
       "name": "policy_old_owner_after_rotation",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -391,7 +419,8 @@
       "fee_shannons": 1000,
       "name": "policy_new_owner_after_rotation",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -402,7 +431,8 @@
       "fee_shannons": 1000,
       "name": "policy_old_owner_can_spend_late_old_lock_deposit",
       "serialized_transaction_bytes": 375,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -429,7 +459,8 @@
       "fee_shannons": 1000,
       "name": "embedded_exit_cannot_pay_fee_at_minimum",
       "serialized_transaction_bytes": 246,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -440,7 +471,8 @@
       "fee_shannons": 1000,
       "name": "embedded_authorized_owner",
       "serialized_transaction_bytes": 310,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -451,7 +483,8 @@
       "fee_shannons": 1000,
       "name": "embedded_wrong_owner",
       "serialized_transaction_bytes": 310,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -462,7 +495,8 @@
       "fee_shannons": 1000,
       "name": "pool_independent_exit_no_operator",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -473,7 +507,8 @@
       "fee_shannons": 1000,
       "name": "pool_forged_signature",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -484,7 +519,8 @@
       "fee_shannons": 1000,
       "name": "pool_forged_sibling",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -495,7 +531,8 @@
       "fee_shannons": 1000,
       "name": "pool_forged_index",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -506,7 +543,8 @@
       "fee_shannons": 1000,
       "name": "pool_unauthorized_key",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -517,7 +555,8 @@
       "fee_shannons": 1000,
       "name": "pool_excessive_claim",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -528,7 +567,8 @@
       "fee_shannons": 1000,
       "name": "pool_reauthorized_overwithdraw",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -539,7 +579,8 @@
       "fee_shannons": 1000,
       "name": "pool_reauthorized_wrong_next_root",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -558,7 +599,8 @@
       "fee_shannons": 1000,
       "name": "pool_concurrent_exit_individually_valid",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -585,7 +627,8 @@
       "fee_shannons": 1000,
       "name": "pool_stale_proof_on_successor",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -596,7 +639,20 @@
       "fee_shannons": 1000,
       "name": "pool_updated_proof_on_successor",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1912690,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_public_witness_refresh_without_global_tree",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -607,7 +663,8 @@
       "fee_shannons": 1000,
       "name": "pool_repeat_claim_on_successor",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -618,7 +675,8 @@
       "fee_shannons": 1000,
       "name": "pool_missing_state_proof",
       "serialized_transaction_bytes": 387,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -629,7 +687,8 @@
       "fee_shannons": 1000,
       "name": "pool_sequential_exit_1",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -640,7 +699,8 @@
       "fee_shannons": 1000,
       "name": "pool_sequential_exit_2",
       "serialized_transaction_bytes": 560,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": true,
@@ -651,7 +711,8 @@
       "fee_shannons": 1000,
       "name": "pool_sequential_exit_3",
       "serialized_transaction_bytes": 439,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -662,7 +723,184 @@
       "fee_shannons": 1000,
       "name": "pool_one_ckb_claim_exit_below_recipient_floor",
       "serialized_transaction_bytes": 528,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1918097,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_no_extra_reserve_exit_0",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1903517,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_no_extra_reserve_exit_1",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1901822,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_no_extra_reserve_exit_2",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1909537,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_no_extra_reserve_exit_3",
+      "serialized_transaction_bytes": 439,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(OutputsSumOverflow: expected outputs capacity (0xbf7adbe18) <= inputs capacity (0xb034cb900))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": null,
+      "name": "pool_extra_output_exceeds_funding",
+      "serialized_transaction_bytes": 649,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 40 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#40 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_truncated_witness",
+      "serialized_transaction_bytes": 495,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Inputs[0].Lock, cause: ValidationFailure: see error code 44 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/75d98f7c84a398804bf563e898b647fe3860341cc280831d7ba474f9a0a62fba.html#44 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000,
+      "name": "pool_rejects_typed_asset_input",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "error": "Dead(OutPoint(0x501a8bdde88d2d8cf14904df1b7cae09e73a71b753180c700d32c93fcf8c901b00000000))",
+      "expected_accept": false,
+      "failure_stage": "resolver",
+      "name": "pool_duplicate_input",
       "test_passed": true
+    },
+    {
+      "accepted": true,
+      "cycles": 1706809,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_underfunded_creation_is_consensus_valid",
+      "serialized_transaction_bytes": 400,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1912672,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_insolvent_root_first_exit_still_accepts",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Transaction(OutputsSumOverflow: expected outputs capacity (0x407290918) <= inputs capacity (0x1b31d2900))",
+      "expected_accept": false,
+      "failure_stage": "capacity",
+      "fee_shannons": null,
+      "name": "pool_insolvent_root_next_exit_unfunded",
+      "serialized_transaction_bytes": 560,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1839405,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_depth_for_1_logical_users",
+      "serialized_transaction_bytes": 375,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1960696,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_depth_for_10_logical_users",
+      "serialized_transaction_bytes": 624,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 2094794,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_depth_for_1000_logical_users",
+      "serialized_transaction_bytes": 816,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 2278569,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 1000,
+      "name": "pool_depth_for_1000000_logical_users",
+      "serialized_transaction_bytes": 1136,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     },
     {
       "accepted": false,
@@ -673,7 +911,8 @@
       "fee_shannons": 1000,
       "name": "policy_missing_code_dependency",
       "serialized_transaction_bytes": 338,
-      "test_passed": true
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     }
   ],
   "consensus_max_block_bytes": 597000,
@@ -717,5 +956,44 @@
     }
   ],
   "max_test_cycles": 100000000,
+  "proof_depth_measurements": [
+    {
+      "actual_signers_executed": 1,
+      "cycles": 1839405,
+      "logical_users": 1,
+      "proof_depth": 0,
+      "serialized_transaction_bytes": 375,
+      "siblings": "opaque synthetic subtree roots; no population or solvency simulation",
+      "witness_bytes": 109
+    },
+    {
+      "actual_signers_executed": 1,
+      "cycles": 1960696,
+      "logical_users": 10,
+      "proof_depth": 4,
+      "serialized_transaction_bytes": 624,
+      "siblings": "opaque synthetic subtree roots; no population or solvency simulation",
+      "witness_bytes": 237
+    },
+    {
+      "actual_signers_executed": 1,
+      "cycles": 2094794,
+      "logical_users": 1000,
+      "proof_depth": 10,
+      "serialized_transaction_bytes": 816,
+      "siblings": "opaque synthetic subtree roots; no population or solvency simulation",
+      "witness_bytes": 429
+    },
+    {
+      "actual_signers_executed": 1,
+      "cycles": 2278569,
+      "logical_users": 1000000,
+      "proof_depth": 20,
+      "serialized_transaction_bytes": 1136,
+      "siblings": "opaque synthetic subtree roots; no population or solvency simulation",
+      "witness_bytes": 749
+    }
+  ],
+  "proof_refresh_host_comparisons": 240,
   "scope": "real CKB noncontextual, capacity and VM script verifiers; real outpoint resolver with in-memory cells; no live chain, PoW, network, mempool or mainnet deployment"
 }

@@ -9,3 +9,4 @@ for mode in policy pool embedded; do
   cp experiments/contracts/target/riscv64imac-unknown-none-elf/release/wo01-contract "experiments/bin/$mode"
 done
 cargo run --manifest-path experiments/validator/Cargo.toml --locked -j "${WO01_JOBS:-3}"
+python3 experiments/model.py

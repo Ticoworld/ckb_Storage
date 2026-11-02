@@ -1,0 +1,121 @@
+users,native_balance_ckb_each,architecture,live_user_cells_capacity_ckb,new_code_capacity_ckb,existing_relevant_system_capacity_ckb,incremental_live_capacity_ckb,full_capacity_including_relevant_system_code_ckb,incremental_ckb_per_user,usd_per_ckb,incremental_capital_usd,independent_fresh_l1_exit_funded,evidence_kind,notes
+1,1,standard_owner,61,0,1100746,61,1100807,61.0,0.01,0.61,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,1,standard_owner,61,0,1100746,61,1100807,61.0,1,61,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,1,standard_owner,61,0,1100746,61,1100807,61.0,10,610,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,1,existing_multisig_1of2,61,0,1101122,61,1101183,61.0,0.01,0.61,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,1,existing_multisig_1of2,61,0,1101122,61,1101183,61.0,1,61,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,1,existing_multisig_1of2,61,0,1101122,61,1101183,61.0,10,610,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,1,custom_policy,73,52621,0,52694,52694,52694.0,0.01,526.94,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,1,custom_policy,73,52621,0,52694,52694,52694.0,1,52694,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,1,custom_policy,73,52621,0,52694,52694,52694.0,10,526940,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,1,shared_pool,73,57189,1100746,57262,1158008,57262.0,0.01,572.62,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,1,shared_pool,73,57189,1100746,57262,1158008,57262.0,1,57262,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,1,shared_pool,73,57189,1100746,57262,1158008,57262.0,10,572620,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,1,embedded_key,41,44677,0,44718,44718,44718.0,0.01,447.18,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1,1,embedded_key,41,44677,0,44718,44718,44718.0,1,44718,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1,1,embedded_key,41,44677,0,44718,44718,44718.0,10,447180,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1,100,standard_owner,100,0,1100746,100,1100846,100.0,0.01,1.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,100,standard_owner,100,0,1100746,100,1100846,100.0,1,100,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,100,standard_owner,100,0,1100746,100,1100846,100.0,10,1000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1,100,existing_multisig_1of2,100,0,1101122,100,1101222,100.0,0.01,1.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,100,existing_multisig_1of2,100,0,1101122,100,1101222,100.0,1,100,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,100,existing_multisig_1of2,100,0,1101122,100,1101222,100.0,10,1000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1,100,custom_policy,100,52621,0,52721,52721,52721.0,0.01,527.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,100,custom_policy,100,52621,0,52721,52721,52721.0,1,52721,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,100,custom_policy,100,52621,0,52721,52721,52721.0,10,527210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1,100,shared_pool,100,57189,1100746,57289,1158035,57289.0,0.01,572.89,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,100,shared_pool,100,57189,1100746,57289,1158035,57289.0,1,57289,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,100,shared_pool,100,57189,1100746,57289,1158035,57289.0,10,572890,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1,100,embedded_key,100,44677,0,44777,44777,44777.0,0.01,447.77,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1,100,embedded_key,100,44677,0,44777,44777,44777.0,1,44777,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1,100,embedded_key,100,44677,0,44777,44777,44777.0,10,447770,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,1,standard_owner,610,0,1100746,610,1101356,61.0,0.01,6.1000000000000005,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,1,standard_owner,610,0,1100746,610,1101356,61.0,1,610,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,1,standard_owner,610,0,1100746,610,1101356,61.0,10,6100,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,1,existing_multisig_1of2,610,0,1101122,610,1101732,61.0,0.01,6.1000000000000005,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,1,existing_multisig_1of2,610,0,1101122,610,1101732,61.0,1,610,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,1,existing_multisig_1of2,610,0,1101122,610,1101732,61.0,10,6100,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,1,custom_policy,730,52621,0,53351,53351,5335.1,0.01,533.51,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,1,custom_policy,730,52621,0,53351,53351,5335.1,1,53351,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,1,custom_policy,730,52621,0,53351,53351,5335.1,10,533510,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,1,shared_pool,82,57189,1100746,57271,1158017,5727.1,0.01,572.71,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,1,shared_pool,82,57189,1100746,57271,1158017,5727.1,1,57271,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,1,shared_pool,82,57189,1100746,57271,1158017,5727.1,10,572710,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,1,embedded_key,410,446770,0,447180,447180,44718.0,0.01,4471.8,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,1,embedded_key,410,446770,0,447180,447180,44718.0,1,447180,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,1,embedded_key,410,446770,0,447180,447180,44718.0,10,4471800,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,100,standard_owner,1000,0,1100746,1000,1101746,100.0,0.01,10.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,100,standard_owner,1000,0,1100746,1000,1101746,100.0,1,1000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,100,standard_owner,1000,0,1100746,1000,1101746,100.0,10,10000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+10,100,existing_multisig_1of2,1000,0,1101122,1000,1102122,100.0,0.01,10.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,100,existing_multisig_1of2,1000,0,1101122,1000,1102122,100.0,1,1000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,100,existing_multisig_1of2,1000,0,1101122,1000,1102122,100.0,10,10000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+10,100,custom_policy,1000,52621,0,53621,53621,5362.1,0.01,536.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,100,custom_policy,1000,52621,0,53621,53621,5362.1,1,53621,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,100,custom_policy,1000,52621,0,53621,53621,5362.1,10,536210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+10,100,shared_pool,1000,57189,1100746,58189,1158935,5818.9,0.01,581.89,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,100,shared_pool,1000,57189,1100746,58189,1158935,5818.9,1,58189,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,100,shared_pool,1000,57189,1100746,58189,1158935,5818.9,10,581890,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+10,100,embedded_key,1000,446770,0,447770,447770,44777.0,0.01,4477.7,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,100,embedded_key,1000,446770,0,447770,447770,44777.0,1,447770,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+10,100,embedded_key,1000,446770,0,447770,447770,44777.0,10,4477700,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,1,standard_owner,61000,0,1100746,61000,1161746,61.0,0.01,610.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,1,standard_owner,61000,0,1100746,61000,1161746,61.0,1,61000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,1,standard_owner,61000,0,1100746,61000,1161746,61.0,10,610000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,1,existing_multisig_1of2,61000,0,1101122,61000,1162122,61.0,0.01,610.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,1,existing_multisig_1of2,61000,0,1101122,61000,1162122,61.0,1,61000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,1,existing_multisig_1of2,61000,0,1101122,61000,1162122,61.0,10,610000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,1,custom_policy,73000,52621,0,125621,125621,125.621,0.01,1256.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,1,custom_policy,73000,52621,0,125621,125621,125.621,1,125621,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,1,custom_policy,73000,52621,0,125621,125621,125.621,10,1256210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,1,shared_pool,1072,57189,1100746,58261,1159007,58.261,0.01,582.61,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,1,shared_pool,1072,57189,1100746,58261,1159007,58.261,1,58261,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,1,shared_pool,1072,57189,1100746,58261,1159007,58.261,10,582610,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,1,embedded_key,41000,44677000,0,44718000,44718000,44718.0,0.01,447180.0,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,1,embedded_key,41000,44677000,0,44718000,44718000,44718.0,1,44718000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,1,embedded_key,41000,44677000,0,44718000,44718000,44718.0,10,447180000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,100,standard_owner,100000,0,1100746,100000,1200746,100.0,0.01,1000.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,100,standard_owner,100000,0,1100746,100000,1200746,100.0,1,100000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,100,standard_owner,100000,0,1100746,100000,1200746,100.0,10,1000000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000,100,existing_multisig_1of2,100000,0,1101122,100000,1201122,100.0,0.01,1000.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,100,existing_multisig_1of2,100000,0,1101122,100000,1201122,100.0,1,100000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,100,existing_multisig_1of2,100000,0,1101122,100000,1201122,100.0,10,1000000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000,100,custom_policy,100000,52621,0,152621,152621,152.621,0.01,1526.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,100,custom_policy,100000,52621,0,152621,152621,152.621,1,152621,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,100,custom_policy,100000,52621,0,152621,152621,152.621,10,1526210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000,100,shared_pool,100000,57189,1100746,157189,1257935,157.189,0.01,1571.89,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,100,shared_pool,100000,57189,1100746,157189,1257935,157.189,1,157189,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,100,shared_pool,100000,57189,1100746,157189,1257935,157.189,10,1571890,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000,100,embedded_key,100000,44677000,0,44777000,44777000,44777.0,0.01,447770.0,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,100,embedded_key,100000,44677000,0,44777000,44777000,44777.0,1,44777000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000,100,embedded_key,100000,44677000,0,44777000,44777000,44777.0,10,447770000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,1,standard_owner,61000000,0,1100746,61000000,62100746,61.0,0.01,610000.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,1,standard_owner,61000000,0,1100746,61000000,62100746,61.0,1,61000000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,1,standard_owner,61000000,0,1100746,61000000,62100746,61.0,10,610000000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,1,existing_multisig_1of2,61000000,0,1101122,61000000,62101122,61.0,0.01,610000.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,1,existing_multisig_1of2,61000000,0,1101122,61000000,62101122,61.0,1,61000000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,1,existing_multisig_1of2,61000000,0,1101122,61000000,62101122,61.0,10,610000000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,1,custom_policy,73000000,52621,0,73052621,73052621,73.052621,0.01,730526.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,1,custom_policy,73000000,52621,0,73052621,73052621,73.052621,1,73052621,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,1,custom_policy,73000000,52621,0,73052621,73052621,73.052621,10,730526210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,1,shared_pool,1000072,57189,1100746,1057261,2158007,1.057261,0.01,10572.61,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,1,shared_pool,1000072,57189,1100746,1057261,2158007,1.057261,1,1057261,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,1,shared_pool,1000072,57189,1100746,1057261,2158007,1.057261,10,10572610,False,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,1,embedded_key,41000000,44677000000,0,44718000000,44718000000,44718.0,0.01,447180000.0,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,1,embedded_key,41000000,44677000000,0,44718000000,44718000000,44718.0,1,44718000000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,1,embedded_key,41000000,44677000000,0,44718000000,44718000000,44718.0,10,447180000000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,100,standard_owner,100000000,0,1100746,100000000,101100746,100.0,0.01,1000000.0,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,100,standard_owner,100000000,0,1100746,100000000,101100746,100.0,1,100000000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,100,standard_owner,100000000,0,1100746,100000000,101100746,100.0,10,1000000000,True,formula extrapolation; see actual cases and proof-depth measurements,no independent recovery
+1000000,100,existing_multisig_1of2,100000000,0,1101122,100000000,101101122,100.0,0.01,1000000.0,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,100,existing_multisig_1of2,100000000,0,1101122,100000000,101101122,100.0,1,100000000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,100,existing_multisig_1of2,100000000,0,1101122,100000000,101101122,100.0,10,1000000000,True,formula extrapolation; see actual cases and proof-depth measurements,two equivalent spend keys; no delay/global revocation
+1000000,100,custom_policy,100000000,52621,0,100052621,100052621,100.052621,0.01,1000526.21,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,100,custom_policy,100000000,52621,0,100052621,100052621,100.052621,1,100052621,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,100,custom_policy,100000000,52621,0,100052621,100052621,100.052621,10,1000526210,True,formula extrapolation; see actual cases and proof-depth measurements,same narrow two-key authority model
+1000000,100,shared_pool,100000000,57189,1100746,100057189,101157935,100.057189,0.01,1000571.89,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,100,shared_pool,100000000,57189,1100746,100057189,101157935,100.057189,1,100057189,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,100,shared_pool,100000000,57189,1100746,100057189,101157935,100.057189,10,1000571890,True,formula extrapolation; see actual cases and proof-depth measurements,immutable claims; fresh outputs; cached proofs and public witness history
+1000000,100,embedded_key,100000000,44677000000,0,44777000000,44777000000,44777.0,0.01,447770000.0,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,100,embedded_key,100000000,44677000000,0,44777000000,44777000000,44777.0,1,44777000000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation
+1000000,100,embedded_key,100000000,44677000000,0,44777000000,44777000000,44777.0,10,447770000000,True,formula extrapolation; see actual cases and proof-depth measurements,one code deployment per independent key; equal-size-code extrapolation

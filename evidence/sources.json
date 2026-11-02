@@ -2,6 +2,11 @@
   "retrieved_utc": "2026-11-02",
   "sources": [
     {
+      "name": "anyone-can-pay",
+      "url": "https://github.com/cryptape/anyone-can-pay.git",
+      "commit": "b845b3bfc70f7483d1d4df4e22b35e672e833dd6"
+    },
+    {
       "name": "ckb",
       "url": "https://github.com/nervosnetwork/ckb.git",
       "commit": "a4aa1286a45bc1d42c30f6698dc51521c3749b40"
@@ -17,6 +22,16 @@
       "commit": "72eb92fca090700dcb398cd8cad8fbd8bad40355"
     },
     {
+      "name": "cobuild",
+      "url": "https://github.com/cryptape/ckb-transaction-cobuild-poc.git",
+      "commit": "e29514f9b1206b40f2bbc7b97e86c6f35373b0b0"
+    },
+    {
+      "name": "cota-sdk",
+      "url": "https://github.com/nervina-labs/cota-sdk-js.git",
+      "commit": "f80d04ea532d72cfe7410ea45af6dc583e140edf"
+    },
+    {
       "name": "cota-smt",
       "url": "https://github.com/nervina-labs/cota-smt.git",
       "commit": "d168e21e109f2940aba5c525a632f4427a44ab45"
@@ -30,6 +45,16 @@
       "name": "godwoken",
       "url": "https://github.com/godwokenrises/godwoken.git",
       "commit": "c2b1f8501de16ef93a4d659f384041bcb1f7bd92"
+    },
+    {
+      "name": "joyid-sdk",
+      "url": "https://github.com/nervina-labs/joyid-sdk-js.git",
+      "commit": "5f25794006dca5276f6b1f287aa81b460bd9af78"
+    },
+    {
+      "name": "omnilock",
+      "url": "https://github.com/cryptape/omnilock.git",
+      "commit": "280dd97ac0930ea1ed766a18d49478229347c832"
     },
     {
       "name": "production-scripts",
@@ -49,6 +74,9 @@
   ],
   "unavailable_attempts": [
     "https://github.com/joyidwallet/joyid-contracts.git",
-    "https://github.com/nervosnetwork/ckb-open-transaction.git"
+    "https://github.com/nervosnetwork/ckb-open-transaction.git",
+    "https://github.com/nervina-labs/joyid-contracts.git",
+    "https://github.com/nervina-labs/cota-scripts.git",
+    "https://registry.npmjs.org/@ckb-ccc/otx"
   ]
 }

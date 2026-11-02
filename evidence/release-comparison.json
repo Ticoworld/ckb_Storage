@@ -1,0 +1,17 @@
+{
+  "release_tag": "v0.210.0",
+  "release_commit": "2592ddf0502cd4adfe886db893cccc866db3c60f",
+  "research_commit": "a4aa1286a45bc1d42c30f6698dc51521c3749b40",
+  "compared_paths": [
+    "util/gen-types/src/extension/capacity.rs",
+    "verification/src/transaction_verifier.rs",
+    "util/types/src/core/cell.rs",
+    "script/src/types.rs",
+    "script/src/verify.rs",
+    "resource/specs/mainnet.toml",
+    "util/dao/src/lib.rs",
+    "util/types/src/core/tx_pool.rs"
+  ],
+  "diff_empty": true,
+  "qualification": "Selected source equality; not remote mainnet node-version or deployment verification"
+}
