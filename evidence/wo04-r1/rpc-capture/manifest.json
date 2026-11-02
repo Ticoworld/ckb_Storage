@@ -1,0 +1,40 @@
+{
+  "captured_utc": "2026-11-02T12:03:33.095884+00:00",
+  "method_scope": [
+    "get_tip_header",
+    "get_blockchain_info",
+    "get_header_by_number"
+  ],
+  "endpoints": [
+    {
+      "endpoint": "https://mainnet.ckb.dev",
+      "responses": [
+        {
+          "method": "get_tip_header",
+          "params": [],
+          "error": "URLError: <urlopen error [Errno 1] Operation not permitted>"
+        },
+        {
+          "method": "get_blockchain_info",
+          "params": [],
+          "error": "URLError: <urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://mainnet.ckbapp.dev",
+      "responses": [
+        {
+          "method": "get_tip_header",
+          "params": [],
+          "error": "URLError: <urlopen error [Errno 1] Operation not permitted>"
+        },
+        {
+          "method": "get_blockchain_info",
+          "params": [],
+          "error": "URLError: <urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    }
+  ]
+}

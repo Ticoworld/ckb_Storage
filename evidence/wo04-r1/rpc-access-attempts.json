@@ -1,0 +1,25 @@
+{
+  "captured_utc_date": "2026-11-02",
+  "policy": {
+    "mode": "restricted",
+    "state": "unknown",
+    "allowed_hosts": [],
+    "note": "Neither attempted RPC hostname appears in the current effective allowed-host list."
+  },
+  "requests": [
+    {
+      "url": "https://mainnet.ckb.dev",
+      "method": "get_tip_header",
+      "result": "failed_before_http_response",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://mainnet.ckbapp.dev",
+      "method": "get_tip_header",
+      "result": "failed_before_http_response",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    }
+  ],
+  "chain_values": null,
+  "interpretation": "No endpoint response, provider identity, tip, DAO field, historical occupancy, live-cell count, or independent cross-check was obtained. This is a network-policy limitation, not a CKB RPC error."
+}
