@@ -38,6 +38,9 @@ fn leaf(k: &[u8], a: u64) -> Result<Node, i8> {
         }
         return Ok(empty());
     }
+    if a <= FEE {
+        return Err(55);
+    } // Every nonempty admitted claim must fund its exit fee.
     let mut b = [0; 41];
     b[1..33].copy_from_slice(k);
     b[33..].copy_from_slice(&a.to_le_bytes());

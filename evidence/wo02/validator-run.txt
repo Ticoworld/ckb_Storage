@@ -12,152 +12,155 @@ omnilock 280dd97ac0930ea1ed766a18d49478229347c832
 production-scripts 26b0b4f15bb6eeb268b70d7ae006e244b7c06649
 rfcs 0c945451c24194f4d34d81195c0159df0a67581a
 rgbpp 4abd216dbd5d25b8f59e843de39643f9b7513f9d
-    Finished `release` profile [optimized] target(s) in 0.02s
+    Finished `release` profile [optimized] target(s) in 0.03s
    Compiling wo02-validator v0.1.0 (/workspace/ckb_Storage/experiments/wo02/validator)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.07s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.62s
      Running `/workspace/wo02-target/validator/debug/wo02-validator`
-PASS admit_fully_backed_four_independent_claims accepted=true cycles=Some(1797809) stage=None 
-PASS admission_underfunded_one_shannon accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })
-PASS admission_principal_underfunded_400_claims_200_backing accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })
-PASS admission_forged_total accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#26 })
-PASS admission_forged_root accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#26 })
-PASS admission_missing_manifest_data accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 25 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#25 })
-PASS admission_sum_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#12 })
-PASS admission_liabilities_plus_reserve_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 28 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#28 })
-PASS admission_depth_over_bound accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 13 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#13 })
-PASS admission_wrong_instance_id accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#23 })
-PASS admission_wrong_pool_lock accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 15 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#15 })
+PASS admit_fully_backed_four_independent_claims accepted=true cycles=Some(1804297) stage=None
+PASS admission_underfunded_one_shannon accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#29 })
+PASS admission_principal_underfunded_400_claims_200_backing accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#29 })
+PASS admission_positive_claim_cannot_cover_fee accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 55 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#55 })
+PASS admission_forged_total accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#26 })
+PASS admission_forged_root accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#26 })
+PASS admission_missing_manifest_data accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 25 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#25 })
+PASS admission_sum_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#12 })
+PASS admission_liabilities_plus_reserve_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 28 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#28 })
+PASS admission_depth_over_bound accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 13 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#13 })
+PASS admission_wrong_instance_id accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#23 })
+PASS admission_wrong_pool_lock accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 15 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#15 })
 PASS one_ckb_exit_fresh_standard_fails_capacity accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[1]): expected occupied capacity (0x16b969d00) <= capacity (0x5f5b9f0))
-PASS one_ckb_exit_existing_real_acp accepted=true cycles=Some(1970266) stage=None 
-PASS acp_owner_independently_spends_credited_cell accepted=true cycles=Some(1684472) stage=None 
-PASS existing_acp_direct_one_ckb_deposit accepted=true cycles=Some(1753513) stage=None 
-PASS existing_acp_direct_same_one_ckb_gross_budget accepted=true cycles=Some(1737001) stage=None 
+PASS one_ckb_exit_existing_real_acp accepted=true cycles=Some(1973987) stage=None
+PASS acp_owner_independently_spends_credited_cell accepted=true cycles=Some(1669495) stage=None
+PASS existing_acp_direct_one_ckb_deposit accepted=true cycles=Some(1753513) stage=None
+PASS existing_acp_direct_same_one_ckb_gross_budget accepted=true cycles=Some(1737001) stage=None
 PASS direct_one_ckb_new_standard_also_fails accepted=false cycles=None stage=Some("capacity") Transaction(InsufficientCellCapacity(Outputs[1]): expected occupied capacity (0x16b969d00) <= capacity (0x5f5e100))
-PASS withdraw_forged_signature accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 39 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#39 })
-PASS withdraw_forged_leaf_key accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS withdraw_forged_sibling_hash accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS withdraw_forged_sibling_sum accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS withdraw_forged_index accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS withdraw_forged_amount accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS withdraw_sum_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#12 })
-PASS withdraw_truncated_public_proof accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#32 })
-PASS signed_theft_from_remaining_claims accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#48 })
-PASS signed_successor_liability_reduction accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#48 })
-PASS signed_strip_type_while_claims_remain accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#45 })
+PASS withdraw_forged_signature accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 39 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#39 })
+PASS withdraw_forged_leaf_key accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS withdraw_forged_sibling_hash accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS withdraw_forged_sibling_sum accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS withdraw_forged_index accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS withdraw_forged_amount accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS withdraw_sum_overflow accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#12 })
+PASS withdraw_truncated_public_proof accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#32 })
+PASS signed_theft_from_remaining_claims accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#48 })
+PASS signed_successor_liability_reduction accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#48 })
+PASS signed_strip_type_while_claims_remain accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#45 })
 PASS signed_redirect_existing_acp_capital accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[1].Lock, cause: ValidationFailure: see error code -44 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/cd69ba816f7471e59110058aa37387c362ed9a240cd178f7bb1ecee386cb31e6.html#-44 })
-PASS signed_premature_full_closure accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#45 })
+PASS signed_premature_full_closure accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#45 })
 PASS first_pool_exit_resolves resolver_accept=true None
-PASS replay_pool_exit_dead_input resolver_accept=false Some(Dead(OutPoint(0x7234284abd72188e953ba1794c258a8c7fd0eca3fccb8aa7800c90545684efdb00000000)))
-PASS competing_exit_individually_valid accepted=true cycles=Some(1992330) stage=None 
-PASS competing_exit_conflicts resolver_accept=false Some(Dead(OutPoint(0x7234284abd72188e953ba1794c258a8c7fd0eca3fccb8aa7800c90545684efdb00000000)))
-PASS order_01_23_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_01_23_step_1 accepted=true cycles=Some(1986897) stage=None 
-PASS order_01_23_step_2 accepted=true cycles=Some(1984855) stage=None 
-PASS order_01_23_step_3 accepted=true cycles=Some(1958309) stage=None 
-PASS order_01_32_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_01_32_step_1 accepted=true cycles=Some(1986897) stage=None 
-PASS order_01_32_step_2 accepted=true cycles=Some(1973975) stage=None 
-PASS order_01_32_step_3 accepted=true cycles=Some(1967514) stage=None 
-PASS order_02_13_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_02_13_step_1 accepted=true cycles=Some(1997787) stage=None 
-PASS order_02_13_step_2 accepted=true cycles=Some(1981439) stage=None 
-PASS order_02_13_step_3 accepted=true cycles=Some(1978368) stage=None 
-PASS order_02_31_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_02_31_step_1 accepted=true cycles=Some(1997787) stage=None 
-PASS order_02_31_step_2 accepted=true cycles=Some(1977692) stage=None 
-PASS order_02_31_step_3 accepted=true cycles=Some(1967524) stage=None 
-PASS order_03_12_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_03_12_step_1 accepted=true cycles=Some(1981448) stage=None 
-PASS order_03_12_step_2 accepted=true cycles=Some(1973963) stage=None 
-PASS order_03_12_step_3 accepted=true cycles=Some(1958328) stage=None 
-PASS order_03_21_step_0 accepted=true cycles=Some(1970266) stage=None 
-PASS order_03_21_step_1 accepted=true cycles=Some(1981448) stage=None 
-PASS order_03_21_step_2 accepted=true cycles=Some(1997761) stage=None 
-PASS order_03_21_step_3 accepted=true cycles=Some(1960024) stage=None 
-PASS order_10_23_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_10_23_step_1 accepted=true cycles=Some(1979403) stage=None 
-PASS order_10_23_step_2 accepted=true cycles=Some(1977707) stage=None 
-PASS order_10_23_step_3 accepted=true cycles=Some(1952885) stage=None 
-PASS order_10_32_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_10_32_step_1 accepted=true cycles=Some(1979403) stage=None 
-PASS order_10_32_step_2 accepted=true cycles=Some(1992329) stage=None 
-PASS order_10_32_step_3 accepted=true cycles=Some(1952573) stage=None 
-PASS order_12_03_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_12_03_step_1 accepted=true cycles=Some(1981465) stage=None 
-PASS order_12_03_step_2 accepted=true cycles=Some(1977707) stage=None 
-PASS order_12_03_step_3 accepted=true cycles=Some(1945779) stage=None 
-PASS order_12_30_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_12_30_step_1 accepted=true cycles=Some(1981465) stage=None 
-PASS order_12_30_step_2 accepted=true cycles=Some(1977713) stage=None 
-PASS order_12_30_step_3 accepted=true cycles=Some(1980085) stage=None 
-PASS order_13_02_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_13_02_step_1 accepted=true cycles=Some(1986885) stage=None 
-PASS order_13_02_step_2 accepted=true cycles=Some(1970239) stage=None 
-PASS order_13_02_step_3 accepted=true cycles=Some(1960033) stage=None 
-PASS order_13_20_step_0 accepted=true cycles=Some(1992330) stage=None 
-PASS order_13_20_step_1 accepted=true cycles=Some(1986885) stage=None 
-PASS order_13_20_step_2 accepted=true cycles=Some(2003205) stage=None 
-PASS order_13_20_step_3 accepted=true cycles=Some(1969202) stage=None 
-PASS order_20_13_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_20_13_step_1 accepted=true cycles=Some(1986885) stage=None 
-PASS order_20_13_step_2 accepted=true cycles=Some(1970227) stage=None 
-PASS order_20_13_step_3 accepted=true cycles=Some(1956309) stage=None 
-PASS order_20_31_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_20_31_step_1 accepted=true cycles=Some(1986885) stage=None 
-PASS order_20_31_step_2 accepted=true cycles=Some(1966494) stage=None 
-PASS order_20_31_step_3 accepted=true cycles=Some(1965452) stage=None 
-PASS order_21_03_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_21_03_step_1 accepted=true cycles=Some(1981457) stage=None 
-PASS order_21_03_step_2 accepted=true cycles=Some(1977713) stage=None 
-PASS order_21_03_step_3 accepted=true cycles=Some(1965449) stage=None 
-PASS order_21_30_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_21_30_step_1 accepted=true cycles=Some(1981457) stage=None 
-PASS order_21_30_step_2 accepted=true cycles=Some(1968529) stage=None 
-PASS order_21_30_step_3 accepted=true cycles=Some(1952585) stage=None 
-PASS order_23_01_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_23_01_step_1 accepted=true cycles=Some(1952212) stage=None 
-PASS order_23_01_step_2 accepted=true cycles=Some(1972258) stage=None 
-PASS order_23_01_step_3 accepted=true cycles=Some(1966873) stage=None 
-PASS order_23_10_step_0 accepted=true cycles=Some(1968517) stage=None 
-PASS order_23_10_step_1 accepted=true cycles=Some(1952212) stage=None 
-PASS order_23_10_step_2 accepted=true cycles=Some(1955944) stage=None 
-PASS order_23_10_step_3 accepted=true cycles=Some(1967505) stage=None 
-PASS order_30_12_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_30_12_step_1 accepted=true cycles=Some(1966839) stage=None 
-PASS order_30_12_step_2 accepted=true cycles=Some(2008643) stage=None 
-PASS order_30_12_step_3 accepted=true cycles=Some(1952882) stage=None 
-PASS order_30_21_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_30_21_step_1 accepted=true cycles=Some(1966839) stage=None 
-PASS order_30_21_step_2 accepted=true cycles=Some(1979400) stage=None 
-PASS order_30_21_step_3 accepted=true cycles=Some(1967490) stage=None 
-PASS order_31_02_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_31_02_step_1 accepted=true cycles=Some(1973960) stage=None 
-PASS order_31_02_step_2 accepted=true cycles=Some(1953964) stage=None 
-PASS order_31_02_step_3 accepted=true cycles=Some(1969208) stage=None 
-PASS order_31_20_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_31_20_step_1 accepted=true cycles=Some(1973960) stage=None 
-PASS order_31_20_step_2 accepted=true cycles=Some(1966851) stage=None 
-PASS order_31_20_step_3 accepted=true cycles=Some(1989263) stage=None 
-PASS order_32_01_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_32_01_step_1 accepted=true cycles=Some(1973975) stage=None 
-PASS order_32_01_step_2 accepted=true cycles=Some(1961396) stage=None 
-PASS order_32_01_step_3 accepted=true cycles=Some(1965461) stage=None 
-PASS order_32_10_step_0 accepted=true cycles=Some(1957664) stage=None 
-PASS order_32_10_step_1 accepted=true cycles=Some(1973975) stage=None 
-PASS order_32_10_step_2 accepted=true cycles=Some(1988554) stage=None 
-PASS order_32_10_step_3 accepted=true cycles=Some(1983830) stage=None 
-PASS public_archive_valid_exit_1 accepted=true cycles=Some(1992330) stage=None 
-PASS public_archive_valid_exit_3 accepted=true cycles=Some(1986885) stage=None 
-PASS public_archive_valid_exit_2 accepted=true cycles=Some(2003205) stage=None 
-PASS operator_gone_separate_client_reconstructed_exit accepted=true cycles=Some(1969202) stage=None 
+PASS replay_pool_exit_dead_input resolver_accept=false Some(Dead(OutPoint(0xf91bb57312be37bfb0bec1420b3ac4f262ebcdc2e3fd070a06569e42f510e1ad00000000)))
+PASS competing_exit_individually_valid accepted=true cycles=Some(1964823) stage=None
+PASS competing_exit_conflicts resolver_accept=false Some(Dead(OutPoint(0xf91bb57312be37bfb0bec1420b3ac4f262ebcdc2e3fd070a06569e42f510e1ad00000000)))
+PASS order_01_23_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_01_23_step_1 accepted=true cycles=Some(1986916) stage=None
+PASS order_01_23_step_2 accepted=true cycles=Some(1992333) stage=None
+PASS order_01_23_step_3 accepted=true cycles=Some(1936259) stage=None
+PASS order_01_32_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_01_32_step_1 accepted=true cycles=Some(1986916) stage=None
+PASS order_01_32_step_2 accepted=true cycles=Some(1986897) stage=None
+PASS order_01_32_step_3 accepted=true cycles=Some(1985522) stage=None
+PASS order_02_13_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_02_13_step_1 accepted=true cycles=Some(1961402) stage=None
+PASS order_02_13_step_2 accepted=true cycles=Some(1972264) stage=None
+PASS order_02_13_step_3 accepted=true cycles=Some(1954581) stage=None
+PASS order_02_31_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_02_31_step_1 accepted=true cycles=Some(1961402) stage=None
+PASS order_02_31_step_2 accepted=true cycles=Some(1981442) stage=None
+PASS order_02_31_step_3 accepted=true cycles=Some(1967521) stage=None
+PASS order_03_12_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_03_12_step_1 accepted=true cycles=Some(1943404) stage=None
+PASS order_03_12_step_2 accepted=true cycles=Some(1986900) stage=None
+PASS order_03_12_step_3 accepted=true cycles=Some(1963783) stage=None
+PASS order_03_21_step_0 accepted=true cycles=Some(1973987) stage=None
+PASS order_03_21_step_1 accepted=true cycles=Some(1943404) stage=None
+PASS order_03_21_step_2 accepted=true cycles=Some(1939351) stage=None
+PASS order_03_21_step_3 accepted=true cycles=Some(1972629) stage=None
+PASS order_10_23_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_10_23_step_1 accepted=true cycles=Some(1973990) stage=None
+PASS order_10_23_step_2 accepted=true cycles=Some(1976038) stage=None
+PASS order_10_23_step_3 accepted=true cycles=Some(1962078) stage=None
+PASS order_10_32_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_10_32_step_1 accepted=true cycles=Some(1973990) stage=None
+PASS order_10_32_step_2 accepted=true cycles=Some(1979400) stage=None
+PASS order_10_32_step_3 accepted=true cycles=Some(1938005) stage=None
+PASS order_12_03_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_12_03_step_1 accepted=true cycles=Some(1943063) stage=None
+PASS order_12_03_step_2 accepted=true cycles=Some(1964799) stage=None
+PASS order_12_03_step_3 accepted=true cycles=Some(1947445) stage=None
+PASS order_12_30_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_12_30_step_1 accepted=true cycles=Some(1943063) stage=None
+PASS order_12_30_step_2 accepted=true cycles=Some(1963086) stage=None
+PASS order_12_30_step_3 accepted=true cycles=Some(1983832) stage=None
+PASS order_13_02_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_13_02_step_1 accepted=true cycles=Some(1959703) stage=None
+PASS order_13_02_step_2 accepted=true cycles=Some(1966851) stage=None
+PASS order_13_02_step_3 accepted=true cycles=Some(1958019) stage=None
+PASS order_13_20_step_0 accepted=true cycles=Some(1964823) stage=None
+PASS order_13_20_step_1 accepted=true cycles=Some(1959703) stage=None
+PASS order_13_20_step_2 accepted=true cycles=Some(1966521) stage=None
+PASS order_13_20_step_3 accepted=true cycles=Some(1943761) stage=None
+PASS order_20_13_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_20_13_step_1 accepted=true cycles=Some(1986906) stage=None
+PASS order_20_13_step_2 accepted=true cycles=Some(1979406) stage=None
+PASS order_20_13_step_3 accepted=true cycles=Some(1958319) stage=None
+PASS order_20_31_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_20_31_step_1 accepted=true cycles=Some(1986906) stage=None
+PASS order_20_31_step_2 accepted=true cycles=Some(1976028) stage=None
+PASS order_20_31_step_3 accepted=true cycles=Some(1961770) stage=None
+PASS order_21_03_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_21_03_step_1 accepted=true cycles=Some(1992331) stage=None
+PASS order_21_03_step_2 accepted=true cycles=Some(1946817) stage=None
+PASS order_21_03_step_3 accepted=true cycles=Some(1972949) stage=None
+PASS order_21_30_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_21_30_step_1 accepted=true cycles=Some(1992331) stage=None
+PASS order_21_30_step_2 accepted=true cycles=Some(1970592) stage=None
+PASS order_21_30_step_3 accepted=true cycles=Some(1969208) stage=None
+PASS order_23_01_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_23_01_step_1 accepted=true cycles=Some(1975360) stage=None
+PASS order_23_01_step_2 accepted=true cycles=Some(1981478) stage=None
+PASS order_23_01_step_3 accepted=true cycles=Some(1963783) stage=None
+PASS order_23_10_step_0 accepted=true cycles=Some(1973981) stage=None
+PASS order_23_10_step_1 accepted=true cycles=Some(1975360) stage=None
+PASS order_23_10_step_2 accepted=true cycles=Some(1977710) stage=None
+PASS order_23_10_step_3 accepted=true cycles=Some(1945806) stage=None
+PASS order_30_12_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_30_12_step_1 accepted=true cycles=Some(1986906) stage=None
+PASS order_30_12_step_2 accepted=true cycles=Some(1959383) stage=None
+PASS order_30_12_step_3 accepted=true cycles=Some(1947148) stage=None
+PASS order_30_21_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_30_21_step_1 accepted=true cycles=Some(1986906) stage=None
+PASS order_30_21_step_2 accepted=true cycles=Some(1992327) stage=None
+PASS order_30_21_step_3 accepted=true cycles=Some(1969220) stage=None
+PASS order_31_02_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_31_02_step_1 accepted=true cycles=Some(1988587) stage=None
+PASS order_31_02_step_2 accepted=true cycles=Some(1963113) stage=None
+PASS order_31_02_step_3 accepted=true cycles=Some(1958025) stage=None
+PASS order_31_20_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_31_20_step_1 accepted=true cycles=Some(1988587) stage=None
+PASS order_31_20_step_2 accepted=true cycles=Some(1966506) stage=None
+PASS order_31_20_step_3 accepted=true cycles=Some(1967527) stage=None
+PASS order_32_01_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_32_01_step_1 accepted=true cycles=Some(1973987) stage=None
+PASS order_32_01_step_2 accepted=true cycles=Some(1981481) stage=None
+PASS order_32_01_step_3 accepted=true cycles=Some(1963752) stage=None
+PASS order_32_10_step_0 accepted=true cycles=Some(1979409) stage=None
+PASS order_32_10_step_1 accepted=true cycles=Some(1973987) stage=None
+PASS order_32_10_step_2 accepted=true cycles=Some(1968556) stage=None
+PASS order_32_10_step_3 accepted=true cycles=Some(1954626) stage=None
+PASS public_archive_valid_exit_1 accepted=true cycles=Some(1964823) stage=None
+PASS public_archive_valid_exit_3 accepted=true cycles=Some(1959703) stage=None
+PASS public_archive_valid_exit_2 accepted=true cycles=Some(1966521) stage=None
+PASS operator_gone_separate_client_reconstructed_exit accepted=true cycles=Some(1943761) stage=None
 PASS independent_client_rejects_missing_middle
 PASS independent_client_rejects_forged_witness
 PASS independent_client_rejects_forged_signature
 PASS independent_client_rejects_wrong_tip
-PASS stale_proof_rejected_with_fresh_authorization accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS reused_claim_on_successor accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })
-PASS missing_public_proof_cannot_exit accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#32 })
-PASS cannot_recreate_same_instance_from_new_funder accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#23 })
-PASS admission_256_actual_independent_keys accepted=true cycles=Some(5901528) stage=None 
-ALL 139 CASES PASSED; 24 COMPLETE EXIT ORDERS; 144 PUBLIC PROOF REFRESHES
-Generated 6 price/exit scenarios and 3 pool capital allocations; new code=65346 CKB, relevant shared system code=1166855 CKB
+PASS stale_proof_rejected_with_fresh_authorization accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS reused_claim_on_successor accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })
+PASS missing_public_proof_cannot_exit accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#32 })
+PASS cannot_recreate_same_instance_from_new_funder accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#23 })
+PASS admission_256_actual_independent_keys accepted=true cycles=Some(5915228) stage=None
+PASS admit_minimum_positive_net_claim accepted=true cycles=Some(1804382) stage=None
+PASS minimum_net_one_shannon_real_acp_credit accepted=true cycles=Some(1954423) stage=None
+ALL 142 CASES PASSED; 24 COMPLETE EXIT ORDERS; 144 PUBLIC PROOF REFRESHES
+Generated 6 price/exit scenarios and 3 pool capital allocations; new code=65322 CKB, relevant shared system code=1166855 CKB

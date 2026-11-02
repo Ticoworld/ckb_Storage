@@ -33,9 +33,18 @@ empty_leaf = (H(2), 0)
 ```
 
 H is CKB-personalized 32-byte Blake2b. Zero entries must use a zero public key and
-are canonical empty leaves. Positive entries are immutable claims. The tree is
+are canonical empty leaves. Positive entries must exceed the fixed exit fee (at least **10,001 shannons**)
+and are immutable claims; this prevents admitting a claim that cannot fund its
+own exit. The original fee-dust counterexample and corrected boundary test are
+preserved. The tree is
 padded to a power of two. Maximum depth is **8**, at most 256 slots. One admission
 with **256 independently derived keys** was executed, not merely extrapolated.
+
+New code is modeled as irrecoverable, immutable zero-code-hash burn-lock cells,
+matching the in-memory fixtures. An operator cannot remove those code cells by
+exercising a private owner key. A reclaimable-owner code deployment would add a
+different liveness dependency and is separately priced, not used for the claimed
+operator-failure path. These are isolated fixtures, not live deployments.
 
 The prototype deliberately reserves **147 additional CKB** beside total
 liabilities: `cell.capacity = liabilities + 147 CKB`. This reserve keeps the root

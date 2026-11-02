@@ -1,7 +1,7 @@
 [
   {
     "accepted": true,
-    "cycles": 1797809,
+    "cycles": 1804297,
     "error": null,
     "expected_accept": true,
     "failure_stage": null,
@@ -13,7 +13,7 @@
   },
   {
     "accepted": true,
-    "cycles": 1970266,
+    "cycles": 1973987,
     "error": null,
     "expected_accept": true,
     "failure_stage": null,
@@ -25,7 +25,7 @@
   },
   {
     "accepted": true,
-    "cycles": 1684472,
+    "cycles": 1669495,
     "error": null,
     "expected_accept": true,
     "failure_stage": null,
@@ -61,7 +61,7 @@
   },
   {
     "accepted": true,
-    "cycles": 1969202,
+    "cycles": 1943761,
     "error": null,
     "expected_accept": true,
     "failure_stage": null,
@@ -73,7 +73,7 @@
   },
   {
     "accepted": true,
-    "cycles": 5901528,
+    "cycles": 5915228,
     "error": null,
     "expected_accept": true,
     "failure_stage": null,

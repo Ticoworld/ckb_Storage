@@ -5,7 +5,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 r=json.loads((root/'evidence/wo02/validator-results.json').read_text())
 fee=r['fixture_fee_shannons']/100_000_000
-new_code=r['type_deployment_occupied_ckb_standard_lock']+r['always_success_deployment_ckb_standard_lock']
+new_code=r['type_elf_bytes']+41+r['always_success_bytes']+41
 system=r['acp_deployment_occupied_ckb_standard_lock']+r['standard_elf_bytes']+61+r['secp_data_bytes']+61
 rows=[]
 for price in [1,10]:
@@ -25,7 +25,7 @@ for price in [1,10]:
             relevant_shared_system_code_ckb=system,
             qualification=dep))
 with (root/'evidence/wo02/one-ckb-economics.csv').open('w',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows(rows)
+    w=csv.DictWriter(f,fieldnames=rows[0].keys(),lineterminator="\n");w.writeheader();w.writerows(rows)
 alloc=[]
 for n in [1,4,256]:
     # Equal 1 CKB claims; N=256 admission actually executed, others scenario arithmetic.
@@ -36,7 +36,7 @@ for n in [1,4,256]:
         per_claim_including_new_code_ckb=(n+147+new_code)/n,
         existing_acp_cells_if_all_exit_ckb=61*n,
         scope='allocation model, no coordinated multi-pool design or payment capability inferred'))
-(root/'evidence/wo02/pool-capital.json').write_text(json.dumps({'allocations':alloc,'relevant_shared_system_code_ckb':system,'new_pool_code_ckb':new_code,'note':'shared system secp/ACP code occupied minima, not actual configured chain holdings; do not count again per user; no live deployment verified'},indent=2)+'\n')
+(root/'evidence/wo02/pool-capital.json').write_text(json.dumps({'allocations':alloc,'relevant_shared_system_code_ckb':system,'new_pool_code_ckb':new_code,'new_code_control':'immutable zero-code-hash burn-lock code cells; this capital is irrecoverable; 20-byte reclaimable-owner-lock alternative costs 40 CKB more but introduces removal risk', 'note':'shared system secp/ACP code occupied minima, not actual configured chain holdings; do not count again per user; no live deployment verified'},indent=2)+'\n')
 selected=['admit_fully_backed_four_independent_claims','one_ckb_exit_existing_real_acp','existing_acp_direct_one_ckb_deposit','existing_acp_direct_same_one_ckb_gross_budget','acp_owner_independently_spends_credited_cell','operator_gone_separate_client_reconstructed_exit','admission_256_actual_independent_keys']
 transactions=[c for c in r['cases'] if c['name'] in selected]
 (root/'evidence/wo02/measured-transactions.json').write_text(json.dumps(transactions,indent=2)+'\n')

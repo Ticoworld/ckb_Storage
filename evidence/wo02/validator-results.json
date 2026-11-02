@@ -3,12 +3,13 @@
   "acp_deployment_occupied_ckb_standard_lock": 66109,
   "acp_elf_bytes": 66048,
   "always_success_bytes": 344,
+  "always_success_deployment_ckb_burn_lock": 385,
   "always_success_deployment_ckb_standard_lock": 405,
   "base_wo01": "ac79f830c896b8b431de9ce869df0883ffc416d5",
   "cases": [
     {
       "accepted": true,
-      "cycles": 1797809,
+      "cycles": 1804297,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -21,7 +22,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#29 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10001,
@@ -33,7 +34,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#29 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 34700010000,
@@ -45,7 +46,19 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#26 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 55 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#55 })",
+      "expected_accept": false,
+      "failure_stage": "scripts",
+      "fee_shannons": 1000009999,
+      "name": "admission_positive_claim_cannot_cover_fee",
+      "serialized_transaction_bytes": 576,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": false,
+      "cycles": null,
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#26 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 900010000,
@@ -57,7 +70,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#26 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 26 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#26 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -69,7 +82,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 25 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#25 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 25 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#25 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -81,7 +94,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#12 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#12 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 1000010000,
@@ -93,7 +106,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 28 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#28 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 28 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#28 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 1000010000,
@@ -105,7 +118,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 13 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#13 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 13 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#13 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -117,7 +130,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#23 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#23 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -129,7 +142,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 15 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#15 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 15 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#15 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -152,7 +165,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -164,7 +177,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1684472,
+      "cycles": 1669495,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -213,7 +226,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 39 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#39 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 39 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#39 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -225,7 +238,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -237,7 +250,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -249,7 +262,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -261,7 +274,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -273,7 +286,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -285,7 +298,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#12 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 12 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#12 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -297,7 +310,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#32 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#32 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -309,7 +322,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#48 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#48 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -321,7 +334,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#48 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 48 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#48 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -333,7 +346,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#45 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#45 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -357,7 +370,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#45 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 45 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#45 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -376,7 +389,7 @@
     },
     {
       "accepted": false,
-      "error": "Dead(OutPoint(0x7234284abd72188e953ba1794c258a8c7fd0eca3fccb8aa7800c90545684efdb00000000))",
+      "error": "Dead(OutPoint(0xf91bb57312be37bfb0bec1420b3ac4f262ebcdc2e3fd070a06569e42f510e1ad00000000))",
       "expected_accept": false,
       "failure_stage": "resolver",
       "name": "replay_pool_exit_dead_input",
@@ -384,7 +397,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -396,7 +409,7 @@
     },
     {
       "accepted": false,
-      "error": "Dead(OutPoint(0x7234284abd72188e953ba1794c258a8c7fd0eca3fccb8aa7800c90545684efdb00000000))",
+      "error": "Dead(OutPoint(0xf91bb57312be37bfb0bec1420b3ac4f262ebcdc2e3fd070a06569e42f510e1ad00000000))",
       "expected_accept": false,
       "failure_stage": "resolver",
       "name": "competing_exit_conflicts",
@@ -404,7 +417,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -416,7 +429,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986897,
+      "cycles": 1986916,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -428,7 +441,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1984855,
+      "cycles": 1992333,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -440,7 +453,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1958309,
+      "cycles": 1936259,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -452,7 +465,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -464,7 +477,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986897,
+      "cycles": 1986916,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -476,7 +489,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973975,
+      "cycles": 1986897,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -488,7 +501,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1967514,
+      "cycles": 1985522,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -500,7 +513,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -512,7 +525,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1997787,
+      "cycles": 1961402,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -524,7 +537,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981439,
+      "cycles": 1972264,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -536,7 +549,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1978368,
+      "cycles": 1954581,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -548,7 +561,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -560,7 +573,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1997787,
+      "cycles": 1961402,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -572,7 +585,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1977692,
+      "cycles": 1981442,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -584,7 +597,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1967524,
+      "cycles": 1967521,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -596,7 +609,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -608,7 +621,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981448,
+      "cycles": 1943404,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -620,7 +633,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973963,
+      "cycles": 1986900,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -632,7 +645,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1958328,
+      "cycles": 1963783,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -644,7 +657,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970266,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -656,7 +669,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981448,
+      "cycles": 1943404,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -668,7 +681,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1997761,
+      "cycles": 1939351,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -680,7 +693,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1960024,
+      "cycles": 1972629,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -692,7 +705,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -704,7 +717,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1979403,
+      "cycles": 1973990,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -716,7 +729,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1977707,
+      "cycles": 1976038,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -728,7 +741,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952885,
+      "cycles": 1962078,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -740,7 +753,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -752,7 +765,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1979403,
+      "cycles": 1973990,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -764,7 +777,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992329,
+      "cycles": 1979400,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -776,7 +789,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952573,
+      "cycles": 1938005,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -788,7 +801,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -800,7 +813,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981465,
+      "cycles": 1943063,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -812,7 +825,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1977707,
+      "cycles": 1964799,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -824,7 +837,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1945779,
+      "cycles": 1947445,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -836,7 +849,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -848,7 +861,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981465,
+      "cycles": 1943063,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -860,7 +873,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1977713,
+      "cycles": 1963086,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -872,7 +885,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1980085,
+      "cycles": 1983832,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -884,7 +897,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -896,7 +909,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986885,
+      "cycles": 1959703,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -908,7 +921,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970239,
+      "cycles": 1966851,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -920,7 +933,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1960033,
+      "cycles": 1958019,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -932,7 +945,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -944,7 +957,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986885,
+      "cycles": 1959703,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -956,7 +969,7 @@
     },
     {
       "accepted": true,
-      "cycles": 2003205,
+      "cycles": 1966521,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -968,7 +981,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1969202,
+      "cycles": 1943761,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -980,7 +993,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -992,7 +1005,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986885,
+      "cycles": 1986906,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1004,7 +1017,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1970227,
+      "cycles": 1979406,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1016,7 +1029,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1956309,
+      "cycles": 1958319,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1028,7 +1041,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1040,7 +1053,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986885,
+      "cycles": 1986906,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1052,7 +1065,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1966494,
+      "cycles": 1976028,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1064,7 +1077,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1965452,
+      "cycles": 1961770,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1076,7 +1089,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1088,7 +1101,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981457,
+      "cycles": 1992331,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1100,7 +1113,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1977713,
+      "cycles": 1946817,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1112,7 +1125,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1965449,
+      "cycles": 1972949,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1124,7 +1137,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1136,7 +1149,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1981457,
+      "cycles": 1992331,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1148,7 +1161,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968529,
+      "cycles": 1970592,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1160,7 +1173,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952585,
+      "cycles": 1969208,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1172,7 +1185,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1184,7 +1197,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952212,
+      "cycles": 1975360,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1196,7 +1209,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1972258,
+      "cycles": 1981478,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1208,7 +1221,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1966873,
+      "cycles": 1963783,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1220,7 +1233,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1968517,
+      "cycles": 1973981,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1232,7 +1245,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952212,
+      "cycles": 1975360,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1244,7 +1257,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1955944,
+      "cycles": 1977710,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1256,7 +1269,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1967505,
+      "cycles": 1945806,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1268,7 +1281,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1280,7 +1293,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1966839,
+      "cycles": 1986906,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1292,7 +1305,7 @@
     },
     {
       "accepted": true,
-      "cycles": 2008643,
+      "cycles": 1959383,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1304,7 +1317,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1952882,
+      "cycles": 1947148,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1316,7 +1329,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1328,7 +1341,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1966839,
+      "cycles": 1986906,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1340,7 +1353,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1979400,
+      "cycles": 1992327,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1352,7 +1365,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1967490,
+      "cycles": 1969220,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1364,7 +1377,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1376,7 +1389,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973960,
+      "cycles": 1988587,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1388,7 +1401,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1953964,
+      "cycles": 1963113,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1400,7 +1413,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1969208,
+      "cycles": 1958025,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1412,7 +1425,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1424,7 +1437,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973960,
+      "cycles": 1988587,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1436,7 +1449,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1966851,
+      "cycles": 1966506,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1448,7 +1461,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1989263,
+      "cycles": 1967527,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1460,7 +1473,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1472,7 +1485,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973975,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1484,7 +1497,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1961396,
+      "cycles": 1981481,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1496,7 +1509,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1965461,
+      "cycles": 1963752,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1508,7 +1521,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1957664,
+      "cycles": 1979409,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1520,7 +1533,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1973975,
+      "cycles": 1973987,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1532,7 +1545,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1988554,
+      "cycles": 1968556,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1544,7 +1557,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1983830,
+      "cycles": 1954626,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1556,7 +1569,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1992330,
+      "cycles": 1964823,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1568,7 +1581,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1986885,
+      "cycles": 1959703,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1580,7 +1593,7 @@
     },
     {
       "accepted": true,
-      "cycles": 2003205,
+      "cycles": 1966521,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1592,7 +1605,7 @@
     },
     {
       "accepted": true,
-      "cycles": 1969202,
+      "cycles": 1943761,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
@@ -1605,7 +1618,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -1617,7 +1630,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#35 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 35 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#35 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -1629,7 +1642,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#32 })",
+      "error": "Script(TransactionScriptError { source: Inputs[0].Type, cause: ValidationFailure: see error code 32 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#32 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -1641,7 +1654,7 @@
     {
       "accepted": false,
       "cycles": null,
-      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#23 })",
+      "error": "Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 23 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615.html#23 })",
       "expected_accept": false,
       "failure_stage": "scripts",
       "fee_shannons": 10000,
@@ -1652,13 +1665,37 @@
     },
     {
       "accepted": true,
-      "cycles": 5901528,
+      "cycles": 5915228,
       "error": null,
       "expected_accept": true,
       "failure_stage": null,
       "fee_shannons": 20000,
       "name": "admission_256_actual_independent_keys",
       "serialized_transaction_bytes": 10776,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1804382,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 10000,
+      "name": "admit_minimum_positive_net_claim",
+      "serialized_transaction_bytes": 616,
+      "test_passed": true,
+      "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+    },
+    {
+      "accepted": true,
+      "cycles": 1954423,
+      "error": null,
+      "expected_accept": true,
+      "failure_stage": null,
+      "fee_shannons": 10000,
+      "name": "minimum_net_one_shannon_real_acp_credit",
+      "serialized_transaction_bytes": 813,
       "test_passed": true,
       "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
     }
@@ -1905,6 +1942,7 @@
       "remaining_liabilities_shannons": 0
     }
   ],
+  "fixture_code_lock": "zero-code-hash empty-args unspendable lock; code capital is not reclaimable",
   "fixture_fee_shannons": 10000,
   "independent_client_archive_attacks": [
     {
@@ -1937,7 +1975,8 @@
   "scope": "actual CKB noncontextual/capacity/script validators and resolver with in-memory cells; no node, mempool, PoW or censorship benchmark",
   "secp_data_bytes": 1048576,
   "standard_elf_bytes": 52048,
-  "type_code_data_hash": "411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1",
-  "type_deployment_occupied_ckb_standard_lock": 64941,
-  "type_elf_bytes": 64880
+  "type_code_data_hash": "5175d952ffebacda33892d3e088ac20f4c26b209667882220b51118a43cb0615",
+  "type_deployment_occupied_ckb_burn_lock": 64937,
+  "type_deployment_occupied_ckb_standard_lock": 64957,
+  "type_elf_bytes": 64896
 }

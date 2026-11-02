@@ -1,0 +1,27 @@
+{
+  "wo01_base": "ac79f830c896b8b431de9ce869df0883ffc416d5",
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)\nbinary: rustc\ncommit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860\ncommit-date: 2026-04-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.95.0\nLLVM version: 22.1.2\n",
+  "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+  "python": "Python 3.12.14",
+  "python_packages": {
+    "cryptography": "50.0.0",
+    "cffi": "2.1.1",
+    "pycparser": "3.0"
+  },
+  "contract_target": "riscv64imac-unknown-none-elf",
+  "contract_rustflags": "-C passes=lower-atomic",
+  "jobs": 3,
+  "sha256": {
+    "experiments/wo02/contracts/src/main.rs": "91c3daf898b73ccd5b0eccdb1d8930c446ced5e3b67ae1fab5a1779af676615b",
+    "experiments/wo02/contracts/Cargo.toml": "990b985820ca3cce70d6fc979bc7ea40bfb07a74223300dec4e2ce5528553a4f",
+    "experiments/wo02/contracts/Cargo.lock": "8981d2093e955aac378d5e905ae025bea3a5d08c1571af0d51ae83759790aab5",
+    "experiments/wo02/validator/src/main.rs": "c1470d4a681fd9fe924d6f06e42e1f06bc01d9072984fb73fd55c0a36d54192a",
+    "experiments/wo02/validator/Cargo.toml": "a575554fa37ddddbf1b4e394f06f4527e1efa9abad5e9b52da4f8cab0458bf77",
+    "experiments/wo02/validator/Cargo.lock": "97f8e8412fd1f574996e3d4cdebfc055a993df4244169f0f21eaf68621a9feaa",
+    "experiments/wo02/proof_client.py": "5fbf1b6f7fb51550ebe158e0c9f904762476ba7c8944e1286e353d978a26f334",
+    "experiments/wo02/economics.py": "bbb7e27118cd0607e94e4c3411e014ac1575ce9213903c0128a4495457498560",
+    "experiments/wo02/run.sh": "a661447834559a58f6db547c2bd14ae9d99bfb5e0275e08a9517e52a12a11787",
+    "experiments/wo02/bin/sum_type": "bb71a0bcba2ec51cdacb4afa622c9bf85bd34cdda803a6de540101a81daa6da0",
+    "experiments/wo02/bin/anyone_can_pay": "5eca558b873dcf54e589fa2135a7a0a13defcfd87469cac7dfc6a38cbf57720a"
+  }
+}

@@ -1,0 +1,11 @@
+   Compiling wo02-validator v0.1.0 (/workspace/ckb_Storage/experiments/wo02/validator)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.01s
+     Running `/workspace/wo02-target/validator/debug/wo02-validator`
+PASS admit_fully_backed_four_independent_claims accepted=true cycles=Some(1797809) stage=None 
+PASS admission_underfunded_one_shannon accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })
+PASS admission_principal_underfunded_400_claims_200_backing accepted=false cycles=None stage=Some("scripts") Script(TransactionScriptError { source: Outputs[0].Type, cause: ValidationFailure: see error code 29 on page https://nervosnetwork.github.io/ckb-script-error-codes/by-data-hash/411c019fcb71cbf7467191a02087cba06b0fffe657afb7aac369182fd0b932d1.html#29 })
+FAIL admission_positive_claim_cannot_cover_fee accepted=true cycles=Some(1759607) stage=None 
+
+thread 'main' (19137) panicked at src/main.rs:246:9:
+unexpected result: admission_positive_claim_cannot_cover_fee
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

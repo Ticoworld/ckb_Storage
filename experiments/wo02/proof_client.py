@@ -67,7 +67,7 @@ def reconstruct(local,archive):
         w=raw_bytes(wa[1]);assert len(w)==109+40*depth and w[0] in (1,2)
         spent=u32(w[1:5]);a=int.from_bytes(w[5:13],'little');k=w[13:45]
         p=[(w[45+40*i:77+40*i],int.from_bytes(w[77+40*i:85+40*i],'little')) for i in range(depth)]
-        assert spent < 1<<depth and spent!=own and a>=10_000
+        assert spent < 1<<depth and spent!=own and a>10_000
         assert fold(leaf(k,a),spent,p)==current,'forged membership/root/sum'
         Ed25519PublicKey.from_public_bytes(k).verify(w[-64:],h(tx[0]))
         updated=fold((h(b'\x02'),0),spent,p)

@@ -1,0 +1,2 @@
+# Preserve raw tool/validator output, including original trailing spaces.
+*.txt whitespace=-blank-at-eol

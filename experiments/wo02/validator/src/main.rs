@@ -210,7 +210,7 @@ impl Lab {
             Err((s, e)) => (false, None, Some(s), Some(e)),
         };
         let passed = ok == expected && (expected || stage.is_none() || stage == failed_stage);
-        println!(
+        let message = format!(
             "{} {} accepted={} cycles={:?} stage={:?} {}",
             if passed { "PASS" } else { "FAIL" },
             name,
@@ -219,6 +219,7 @@ impl Lab {
             failed_stage,
             error.as_deref().unwrap_or("")
         );
+        println!("{}", message.trim_end());
         let input_cap: u64 = tx
             .inputs()
             .into_iter()
@@ -659,6 +660,24 @@ fn main() {
             &secp,
         ),
         &big_funder,
+        false,
+        Some("scripts"),
+    );
+    let fee_dust = leaf(&keys[0], 1);
+    lab.check(
+        "admission_positive_claim_cannot_cover_fee",
+        admission(
+            &lab,
+            &funder,
+            &typ,
+            &lock,
+            fee_dust,
+            0,
+            manifest(&keys[..1], &[1]),
+            RESERVE + 1,
+            &secp,
+        ),
+        &funder,
         false,
         Some("scripts"),
     );
@@ -1367,13 +1386,53 @@ fn main() {
         true,
         None,
     );
+    let tiny_amounts = [FEE + 1, CKB];
+    let tiny_leaves = vec![leaf(&keys[0], FEE + 1), leaf(&keys[1], CKB)];
+    let tiny_root = tree(&tiny_leaves);
+    let tiny_funder = lab.cell(output(&standard, tiny_root.sum + RESERVE + FEE), vec![]);
+    let tiny_type = instance(&template, &tiny_funder);
+    let tiny_create = admission(
+        &lab,
+        &tiny_funder,
+        &tiny_type,
+        &lock,
+        tiny_root,
+        1,
+        manifest(&keys[..2], &tiny_amounts),
+        tiny_root.sum + RESERVE,
+        &secp,
+    );
+    lab.check(
+        "admit_minimum_positive_net_claim",
+        tiny_create.clone(),
+        &tiny_funder,
+        true,
+        None,
+    );
+    let tiny_pool = committed(&mut lab, &tiny_create, 0);
+    lab.check(
+        "minimum_net_one_shannon_real_acp_credit",
+        withdraw(
+            &lab,
+            &tiny_pool,
+            Some(&recipients[0]),
+            &standard,
+            0,
+            FEE + 1,
+            &keys[0],
+            &proof(&tiny_leaves, 0),
+        ),
+        &tiny_pool,
+        true,
+        None,
+    );
     let required = pool
         .cell_output
         .occupied_capacity(Capacity::bytes(41).unwrap())
         .unwrap()
         .as_u64();
     assert_eq!(required, RESERVE);
-    let report = json!({"base_wo01":"ac79f830c896b8b431de9ce869df0883ffc416d5","scope":"actual CKB noncontextual/capacity/script validators and resolver with in-memory cells; no node, mempool, PoW or censorship benchmark","max_admission_depth":8,"max_admission_claims":256,"fixture_fee_shannons":FEE,"root_occupied_shannons":required,"root_data_bytes":41,"pool_reserve_shannons":RESERVE,"type_elf_bytes":code.len(),"type_code_data_hash":hex::encode(hash(&code)),"type_deployment_occupied_ckb_standard_lock":code.len()+61,"always_success_bytes":success_bytes.len(),"always_success_deployment_ckb_standard_lock":success_bytes.len()+61,"acp_elf_bytes":acp_bytes.len(),"acp_data_hash":hex::encode(hash(&acp_bytes)),"acp_deployment_occupied_ckb_standard_lock":acp_bytes.len()+61,"standard_elf_bytes":standard_bytes.len(),"secp_data_bytes":secpdata.len(),"independent_client_archive_attacks":client_attacks,"exhaustive_orders":sequences,"public_proof_refreshes":reconstructed,"cases":lab.rows});
+    let report = json!({"base_wo01":"ac79f830c896b8b431de9ce869df0883ffc416d5","scope":"actual CKB noncontextual/capacity/script validators and resolver with in-memory cells; no node, mempool, PoW or censorship benchmark","max_admission_depth":8,"max_admission_claims":256,"fixture_fee_shannons":FEE,"root_occupied_shannons":required,"root_data_bytes":41,"pool_reserve_shannons":RESERVE,"type_elf_bytes":code.len(),"type_code_data_hash":hex::encode(hash(&code)),"type_deployment_occupied_ckb_standard_lock":code.len()+61,"type_deployment_occupied_ckb_burn_lock":code.len()+41,"fixture_code_lock":"zero-code-hash empty-args unspendable lock; code capital is not reclaimable","always_success_bytes":success_bytes.len(),"always_success_deployment_ckb_standard_lock":success_bytes.len()+61,"always_success_deployment_ckb_burn_lock":success_bytes.len()+41,"acp_elf_bytes":acp_bytes.len(),"acp_data_hash":hex::encode(hash(&acp_bytes)),"acp_deployment_occupied_ckb_standard_lock":acp_bytes.len()+61,"standard_elf_bytes":standard_bytes.len(),"secp_data_bytes":secpdata.len(),"independent_client_archive_attacks":client_attacks,"exhaustive_orders":sequences,"public_proof_refreshes":reconstructed,"cases":lab.rows});
     std::fs::write(
         root.join("evidence/wo02/validator-results.json"),
         serde_json::to_string_pretty(&report).unwrap() + "\n",
