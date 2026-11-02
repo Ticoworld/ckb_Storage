@@ -1,0 +1,86 @@
+[
+  {
+    "accepted": true,
+    "cycles": 1797809,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "admit_fully_backed_four_independent_claims",
+    "serialized_transaction_bytes": 696,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 1970266,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "one_ckb_exit_existing_real_acp",
+    "serialized_transaction_bytes": 853,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 1684472,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "acp_owner_independently_spends_credited_cell",
+    "serialized_transaction_bytes": 392,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 1753513,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "existing_acp_direct_one_ckb_deposit",
+    "serialized_transaction_bytes": 590,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 1737001,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "existing_acp_direct_same_one_ckb_gross_budget",
+    "serialized_transaction_bytes": 590,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 1969202,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 10000,
+    "name": "operator_gone_separate_client_reconstructed_exit",
+    "serialized_transaction_bytes": 638,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  },
+  {
+    "accepted": true,
+    "cycles": 5901528,
+    "error": null,
+    "expected_accept": true,
+    "failure_stage": null,
+    "fee_shannons": 20000,
+    "name": "admission_256_actual_independent_keys",
+    "serialized_transaction_bytes": 10776,
+    "test_passed": true,
+    "transaction_size_for_fee_note": "raw packed transaction bytes; fixture fee is consensus-valid, not a mempool admission test"
+  }
+]

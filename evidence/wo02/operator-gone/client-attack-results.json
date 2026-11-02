@@ -1,0 +1,22 @@
+[
+  {
+    "attack": "missing_middle",
+    "rejected": true,
+    "stderr": "REJECTED PUBLIC ARCHIVE: AssertionError: missing, reordered or wrong-instance history\n"
+  },
+  {
+    "attack": "forged_witness",
+    "rejected": true,
+    "stderr": "REJECTED PUBLIC ARCHIVE: AssertionError: forged membership/root/sum\n"
+  },
+  {
+    "attack": "forged_signature",
+    "rejected": true,
+    "stderr": "REJECTED PUBLIC ARCHIVE: InvalidSignature: \n"
+  },
+  {
+    "attack": "wrong_tip",
+    "rejected": true,
+    "stderr": "REJECTED PUBLIC ARCHIVE: AssertionError: incomplete or forked history\n"
+  }
+]

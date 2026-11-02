@@ -5,7 +5,6 @@ edition = "2024"
 [features]
 default = []
 sumtype = []
-poollock = []
 [dependencies]
 ckb-std = { version = "=1.1.0", default-features = false, features = ["allocator", "ckb-types"] }
 blake2b-ref = "=0.3.1"

@@ -1,0 +1,18 @@
+{
+  "index": 0,
+  "amount_shannons": 100000000,
+  "pubkey": "8a88e3dd7409f195fd52db2d3cba5d72ca6709bf1d94121bf3748801b40f6f5c",
+  "proof": [
+    {
+      "hash": "10ad3f5012ce514f409e4da4c011c24a314434881872c124ae064012afaf389d",
+      "sum": 0
+    },
+    {
+      "hash": "6dce5449781fcea0e6243af3a0e772b2a5bcedb20d8b705f4d76c6172f2e617e",
+      "sum": 0
+    }
+  ],
+  "live_outpoint": "43b55d6965f9ba4e326dfb7fd6aa480728b8d759c8260be60c58a57da44b53f800000000",
+  "live_root_data": "025b9cb51a7fe0c9d575353eb5bee8f815c4da5c973f25057b6e3299c87941bc4400e1f50500000000",
+  "public_transitions_processed": 3
+}

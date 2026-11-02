@@ -1,0 +1,43 @@
+{
+  "allocations": [
+    {
+      "claims": 1,
+      "claim_principal_ckb": 1,
+      "pool_reserve_ckb": 147,
+      "new_code_ckb": 65346,
+      "live_pool_capacity_ckb": 148,
+      "live_pool_and_new_code_ckb": 65494,
+      "per_claim_live_capacity_excluding_new_code_ckb": 148.0,
+      "per_claim_including_new_code_ckb": 65494.0,
+      "existing_acp_cells_if_all_exit_ckb": 61,
+      "scope": "allocation model, no coordinated multi-pool design or payment capability inferred"
+    },
+    {
+      "claims": 4,
+      "claim_principal_ckb": 4,
+      "pool_reserve_ckb": 147,
+      "new_code_ckb": 65346,
+      "live_pool_capacity_ckb": 151,
+      "live_pool_and_new_code_ckb": 65497,
+      "per_claim_live_capacity_excluding_new_code_ckb": 37.75,
+      "per_claim_including_new_code_ckb": 16374.25,
+      "existing_acp_cells_if_all_exit_ckb": 244,
+      "scope": "allocation model, no coordinated multi-pool design or payment capability inferred"
+    },
+    {
+      "claims": 256,
+      "claim_principal_ckb": 256,
+      "pool_reserve_ckb": 147,
+      "new_code_ckb": 65346,
+      "live_pool_capacity_ckb": 403,
+      "live_pool_and_new_code_ckb": 65749,
+      "per_claim_live_capacity_excluding_new_code_ckb": 1.57421875,
+      "per_claim_including_new_code_ckb": 256.83203125,
+      "existing_acp_cells_if_all_exit_ckb": 15616,
+      "scope": "allocation model, no coordinated multi-pool design or payment capability inferred"
+    }
+  ],
+  "relevant_shared_system_code_ckb": 1166855,
+  "new_pool_code_ckb": 65346,
+  "note": "shared system secp/ACP code occupied minima, not actual configured chain holdings; do not count again per user; no live deployment verified"
+}

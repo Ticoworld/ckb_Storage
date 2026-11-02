@@ -1,0 +1,7 @@
+usd_per_ckb,route,claim_ckb,extra_exit_native_capital_ckb,preexisting_recipient_capacity_ckb,measured_exit_fee_ckb,claim_plus_extra_ckb,claim_usd,extra_exit_capital_usd,preexisting_recipient_usd,exit_fee_usd,pool_reserve_ckb,new_pool_code_ckb,relevant_shared_system_code_ckb,qualification
+1,fresh_standard,1,60.0001,0,0.0001,61.0001,1,60.0001,0,0.0001,147,65346,1166855,not executable by minimal pool; requires extra capital/protocol integration
+1,existing_acp,1,0,61,0.0001,1,1,0,61,0.0001,147,65346,1166855,actual ACP accepts; recipient key needed only for later independent spend
+1,continued_shared_claim,1,0,0,0,1,1,0,0,0,147,65346,1166855,"conditional local proof/public history, code and inclusion; no general payment implemented"
+10,fresh_standard,1,60.0001,0,0.0001,61.0001,10,600.001,0,0.001,147,65346,1166855,not executable by minimal pool; requires extra capital/protocol integration
+10,existing_acp,1,0,61,0.0001,1,10,0,610,0.001,147,65346,1166855,actual ACP accepts; recipient key needed only for later independent spend
+10,continued_shared_claim,1,0,0,0,1,10,0,0,0,147,65346,1166855,"conditional local proof/public history, code and inclusion; no general payment implemented"

@@ -1,0 +1,14 @@
+{
+  "wo01_base_commit": "ac79f830c896b8b431de9ce869df0883ffc416d5",
+  "sdk": {
+    "url": "https://github.com/nervosnetwork/ckb-sdk-rust.git",
+    "commit": "1fbf3d4c9b35ef90bdb9e6621a8d26edde6325ce",
+    "artifact": "src/test-data/anyone_can_pay",
+    "bytes": 66048,
+    "ckb_data_hash": "cd69ba816f7471e59110058aa37387c362ed9a240cd178f7bb1ecee386cb31e6"
+  },
+  "acp_reference_expected_hash": "cd69ba816f7471e59110058aa37387c362ed9a240cd178f7bb1ecee386cb31e6",
+  "acp_reference_build_rs": "WO01 pinned anyone-can-pay/build.rs",
+  "note": "SDK artifact must match authoritative ACP build.rs hash; not a claim of a live mainnet deployment check",
+  "failed_lookup": "crates.io ckb-production-scripts metadata returned HTTP 404; official SDK artifact used instead"
+}
